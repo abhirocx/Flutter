@@ -1,0 +1,540 @@
+import 'dart:ui';
+
+import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+import '../constants/Strings.dart';
+import '../main.dart';
+
+Future<Locale> setLocale(String languageCode) async {
+  SharedPreferences _prefs = await SharedPreferences.getInstance();
+  await _prefs.setString(prefSelectedLanguageCode, languageCode);
+  return _locale(languageCode);
+}
+
+Future<Locale> getLocale() async {
+  SharedPreferences _prefs = await SharedPreferences.getInstance();
+  String languageCode = _prefs.getString(prefSelectedLanguageCode) ?? "en";
+  return _locale(languageCode);
+}
+
+void getLang() async {
+  SharedPreferences _prefs = await SharedPreferences.getInstance();
+  String languageCode = _prefs.getString(prefSelectedLanguageCode) ?? "en";
+
+  if (languageCode == 'en') {
+    _prefs.setBool(ELANG, true);
+    _prefs.setBool(HLANG, false);
+    _prefs.setBool(GLANG, false);
+    _prefs.setBool(ALANG, false);
+    _prefs.setBool(BLANG, false);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(KALANG, false);
+    _prefs.setBool(KNLANG, false);
+    _prefs.setBool(MALANG, false);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, false);
+    _prefs.setBool(TLANG, false);
+    elangu = true;
+    hlangu = false;
+    glangu = false;
+    alangu = false;
+    blangu = false;
+    dlangu = false;
+    kalangu = false;
+    knlangu = false;
+    malangu = false;
+    mllangu = false;
+    plangu = false;
+    tlangu = false;
+  } else if (languageCode == 'hi') {
+    _prefs.setBool(ELANG, false);
+    _prefs.setBool(HLANG, true);
+    _prefs.setBool(GLANG, false);
+    _prefs.setBool(ALANG, false);
+    _prefs.setBool(BLANG, false);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(KALANG, false);
+    _prefs.setBool(KNLANG, false);
+    _prefs.setBool(MALANG, false);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, false);
+    _prefs.setBool(TLANG, false);
+    elangu = false;
+    hlangu = true;
+    glangu = false;
+    alangu = false;
+    blangu = false;
+    dlangu = false;
+    kalangu = false;
+    knlangu = false;
+    malangu = false;
+    mllangu = false;
+    plangu = false;
+    tlangu = false;
+  } else if (languageCode == 'gu') {
+    _prefs.setBool(ELANG, false);
+    _prefs.setBool(HLANG, false);
+    _prefs.setBool(GLANG, true);
+    _prefs.setBool(ALANG, false);
+    _prefs.setBool(BLANG, false);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(KALANG, false);
+    _prefs.setBool(KNLANG, false);
+    _prefs.setBool(MALANG, false);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, false);
+    _prefs.setBool(TLANG, false);
+    elangu = false;
+    hlangu = false;
+    glangu = true;
+    alangu = false;
+    blangu = false;
+    dlangu = false;
+    kalangu = false;
+    knlangu = false;
+    malangu = false;
+    mllangu = false;
+    plangu = false;
+    tlangu = false;
+  } else if (languageCode == 'as') {
+    _prefs.setBool(ELANG, false);
+    _prefs.setBool(HLANG, false);
+    _prefs.setBool(GLANG, false);
+    _prefs.setBool(ALANG, true);
+    _prefs.setBool(BLANG, false);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(KALANG, false);
+    _prefs.setBool(KNLANG, false);
+    _prefs.setBool(MALANG, false);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, false);
+    _prefs.setBool(TLANG, false);
+    elangu = false;
+    hlangu = false;
+    glangu = false;
+    alangu = true;
+    blangu = false;
+    dlangu = false;
+    kalangu = false;
+    knlangu = false;
+    malangu = false;
+    mllangu = false;
+    plangu = false;
+    tlangu = false;
+  } else if (languageCode == 'bo') {
+    _prefs.setBool(ELANG, false);
+    _prefs.setBool(HLANG, false);
+    _prefs.setBool(GLANG, false);
+    _prefs.setBool(ALANG, false);
+    _prefs.setBool(BLANG, true);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(KALANG, false);
+    _prefs.setBool(KNLANG, false);
+    _prefs.setBool(MALANG, false);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, false);
+    _prefs.setBool(TLANG, false);
+    elangu = false;
+    hlangu = false;
+    glangu = false;
+    alangu = false;
+    blangu = true;
+    dlangu = false;
+    kalangu = false;
+    knlangu = false;
+    malangu = false;
+    mllangu = false;
+    plangu = false;
+    tlangu = false;
+  }
+  // else if (languageCode == 'doi') {
+  //   _prefs.setBool(ELANG, false);
+  //   _prefs.setBool(HLANG, false);
+  //   _prefs.setBool(GLANG, false);
+  //   _prefs.setBool(ALANG, false);
+  //   _prefs.setBool(BLANG, false);
+  //   _prefs.setBool(DLANG, true);
+  //   _prefs.setBool(KALANG, false);
+  //   _prefs.setBool(KNLANG, false);
+  //   _prefs.setBool(MALANG, false);
+  //   _prefs.setBool(MLLANG, false);
+  //   _prefs.setBool(PLANG, false);
+  //   _prefs.setBool(TLANG, false);
+  //   elangu = false;
+  //   hlangu = false;
+  //   glangu = false;
+  //   alangu = false;
+  //   blangu = false;
+  //   dlangu = true;
+  //   kalangu = false;
+  //   knlangu = false;
+  //   malangu = false;
+  //   mllangu = false;
+  //   plangu = false;
+  //   tlangu = false;
+  // }
+  else if (languageCode == 'ks') {
+    _prefs.setBool(ELANG, false);
+    _prefs.setBool(HLANG, false);
+    _prefs.setBool(GLANG, false);
+    _prefs.setBool(ALANG, false);
+    _prefs.setBool(BLANG, false);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(KALANG, true);
+    _prefs.setBool(KNLANG, false);
+    _prefs.setBool(MALANG, false);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, false);
+    _prefs.setBool(TLANG, false);
+    elangu = false;
+    hlangu = false;
+    glangu = false;
+    alangu = false;
+    blangu = false;
+    dlangu = false;
+    kalangu = true;
+    knlangu = false;
+    malangu = false;
+    mllangu = false;
+    plangu = false;
+    tlangu = false;
+  } else if (languageCode == 'kn') {
+    _prefs.setBool(ELANG, false);
+    _prefs.setBool(HLANG, false);
+    _prefs.setBool(GLANG, false);
+    _prefs.setBool(ALANG, false);
+    _prefs.setBool(BLANG, false);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(KALANG, false);
+    _prefs.setBool(KNLANG, true);
+    _prefs.setBool(MALANG, false);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, false);
+    _prefs.setBool(TLANG, false);
+    elangu = false;
+    hlangu = false;
+    glangu = false;
+    alangu = false;
+    blangu = false;
+    dlangu = false;
+    kalangu = false;
+    knlangu = true;
+    malangu = false;
+    mllangu = false;
+    plangu = false;
+    tlangu = false;
+  } else if (languageCode == 'mr') {
+    _prefs.setBool(ELANG, false);
+    _prefs.setBool(HLANG, false);
+    _prefs.setBool(GLANG, false);
+    _prefs.setBool(ALANG, false);
+    _prefs.setBool(BLANG, false);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(KALANG, false);
+    _prefs.setBool(KNLANG, false);
+    _prefs.setBool(MALANG, true);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, false);
+    _prefs.setBool(TLANG, false);
+    elangu = false;
+    hlangu = false;
+    glangu = false;
+    alangu = false;
+    blangu = false;
+    dlangu = false;
+    kalangu = false;
+    knlangu = false;
+    malangu = true;
+    mllangu = false;
+    plangu = false;
+    tlangu = false;
+  } else if (languageCode == 'ml') {
+    _prefs.setBool(ELANG, false);
+    _prefs.setBool(HLANG, false);
+    _prefs.setBool(GLANG, false);
+    _prefs.setBool(ALANG, false);
+    _prefs.setBool(BLANG, false);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(KALANG, false);
+    _prefs.setBool(KNLANG, false);
+    _prefs.setBool(MALANG, false);
+    _prefs.setBool(MLLANG, true);
+    _prefs.setBool(PLANG, false);
+    _prefs.setBool(TLANG, false);
+    elangu = false;
+    hlangu = false;
+    glangu = false;
+    alangu = false;
+    blangu = false;
+    dlangu = false;
+    kalangu = false;
+    knlangu = false;
+    malangu = false;
+    mllangu = true;
+    plangu = false;
+    tlangu = false;
+  } else if (languageCode == 'pa') {
+    _prefs.setBool(ELANG, false);
+    _prefs.setBool(HLANG, false);
+    _prefs.setBool(GLANG, false);
+    _prefs.setBool(ALANG, false);
+    _prefs.setBool(BLANG, false);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(KALANG, false);
+    _prefs.setBool(KNLANG, false);
+    _prefs.setBool(MALANG, false);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, true);
+    _prefs.setBool(TLANG, false);
+    elangu = false;
+    hlangu = false;
+    glangu = false;
+    alangu = false;
+    blangu = false;
+    dlangu = false;
+    kalangu = false;
+    knlangu = false;
+    malangu = false;
+    mllangu = false;
+    plangu = true;
+    tlangu = false;
+  } else if (languageCode == 'te') {
+    _prefs.setBool(ELANG, false);
+    _prefs.setBool(HLANG, false);
+    _prefs.setBool(GLANG, false);
+    _prefs.setBool(ALANG, false);
+    _prefs.setBool(BLANG, false);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(KALANG, false);
+    _prefs.setBool(KNLANG, false);
+    _prefs.setBool(MALANG, false);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, false);
+    _prefs.setBool(TLANG, true);
+    elangu = false;
+    hlangu = false;
+    glangu = false;
+    alangu = false;
+    blangu = false;
+    dlangu = false;
+    kalangu = false;
+    knlangu = false;
+    malangu = false;
+    mllangu = false;
+    plangu = false;
+    tlangu = true;
+  } else {
+    _prefs.setBool(ELANG, false);
+    _prefs.setBool(HLANG, true);
+    _prefs.setBool(GLANG, false);
+    _prefs.setBool(ALANG, false);
+    _prefs.setBool(BLANG, false);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(KALANG, false);
+    _prefs.setBool(KNLANG, false);
+    _prefs.setBool(MALANG, false);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, false);
+    _prefs.setBool(TLANG, false);
+    elangu = false;
+    hlangu = true;
+    glangu = false;
+    alangu = false;
+    blangu = false;
+    dlangu = false;
+    kalangu = false;
+    knlangu = false;
+    malangu = false;
+    mllangu = false;
+    plangu = false;
+    tlangu = false;
+  }
+}
+
+Locale _locale(String languageCode) {
+  return languageCode != null && languageCode.isNotEmpty
+      ? Locale(languageCode, '')
+      : const Locale('en', '');
+}
+
+void changeLanguage(BuildContext context, String selectedLanguageCode) async {
+  var _locale = await setLocale(selectedLanguageCode);
+  SharedPreferences _prefs = await SharedPreferences.getInstance();
+  if (selectedLanguageCode == 'en') {
+    _prefs.setBool(ALANG, false);
+    _prefs.setBool(BLANG, false);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(GLANG, false);
+    _prefs.setBool(HLANG, false);
+    _prefs.setBool(KALANG, false);
+    _prefs.setBool(KNLANG, false);
+    _prefs.setBool(MALANG, false);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, false);
+    _prefs.setBool(TLANG, false);
+    _prefs.setBool(ELANG, true);
+  } else if (selectedLanguageCode == 'hi') {
+    _prefs.setBool(ALANG, false);
+    _prefs.setBool(BLANG, false);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(GLANG, false);
+    _prefs.setBool(HLANG, true);
+    _prefs.setBool(KALANG, false);
+    _prefs.setBool(KNLANG, false);
+    _prefs.setBool(MALANG, false);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, false);
+    _prefs.setBool(TLANG, false);
+    _prefs.setBool(ELANG, false);
+    // elangu = false;
+    // hlangu = true;
+  } else if (selectedLanguageCode == 'gu') {
+    _prefs.setBool(ALANG, false);
+    _prefs.setBool(BLANG, false);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(GLANG, true);
+    _prefs.setBool(HLANG, false);
+    _prefs.setBool(KALANG, false);
+    _prefs.setBool(KNLANG, false);
+    _prefs.setBool(MALANG, false);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, false);
+    _prefs.setBool(TLANG, false);
+    _prefs.setBool(ELANG, false);
+  } else if (selectedLanguageCode == 'as') {
+    _prefs.setBool(ALANG, true);
+    _prefs.setBool(BLANG, false);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(GLANG, false);
+    _prefs.setBool(HLANG, false);
+    _prefs.setBool(KALANG, false);
+    _prefs.setBool(KNLANG, false);
+    _prefs.setBool(MALANG, false);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, false);
+    _prefs.setBool(TLANG, false);
+    _prefs.setBool(ELANG, false);
+  } else if (selectedLanguageCode == 'bo') {
+    _prefs.setBool(ALANG, false);
+    _prefs.setBool(BLANG, true);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(GLANG, false);
+    _prefs.setBool(HLANG, false);
+    _prefs.setBool(KALANG, false);
+    _prefs.setBool(KNLANG, false);
+    _prefs.setBool(MALANG, false);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, false);
+    _prefs.setBool(TLANG, false);
+    _prefs.setBool(ELANG, false);
+  }
+  // else if (selectedLanguageCode == 'doi') {
+  //   _prefs.setBool(ALANG, false);
+  //   _prefs.setBool(BLANG, false);
+  //   _prefs.setBool(DLANG, true);
+  //   _prefs.setBool(GLANG, false);
+  //   _prefs.setBool(HLANG, false);
+  //   _prefs.setBool(KALANG, false);
+  //   _prefs.setBool(KNLANG, false);
+  //   _prefs.setBool(MALANG, false);
+  //   _prefs.setBool(MLLANG, false);
+  //   _prefs.setBool(PLANG, false);
+  //   _prefs.setBool(TLANG, false);
+  //   _prefs.setBool(ELANG, false);
+  // }
+  else if (selectedLanguageCode == 'ks') {
+    _prefs.setBool(ALANG, false);
+    _prefs.setBool(BLANG, false);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(GLANG, false);
+    _prefs.setBool(HLANG, false);
+    _prefs.setBool(KALANG, true);
+    _prefs.setBool(KNLANG, false);
+    _prefs.setBool(MALANG, false);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, false);
+    _prefs.setBool(TLANG, false);
+    _prefs.setBool(ELANG, false);
+  } else if (selectedLanguageCode == 'kn') {
+    _prefs.setBool(ALANG, false);
+    _prefs.setBool(BLANG, false);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(GLANG, false);
+    _prefs.setBool(HLANG, false);
+    _prefs.setBool(KALANG, false);
+    _prefs.setBool(KNLANG, true);
+    _prefs.setBool(MALANG, false);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, false);
+    _prefs.setBool(TLANG, false);
+    _prefs.setBool(ELANG, false);
+  } else if (selectedLanguageCode == 'mr') {
+    _prefs.setBool(ALANG, false);
+    _prefs.setBool(BLANG, false);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(GLANG, false);
+    _prefs.setBool(HLANG, false);
+    _prefs.setBool(KALANG, false);
+    _prefs.setBool(KNLANG, false);
+    _prefs.setBool(MALANG, true);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, false);
+    _prefs.setBool(TLANG, false);
+    _prefs.setBool(ELANG, false);
+  } else if (selectedLanguageCode == 'ml') {
+    _prefs.setBool(ALANG, false);
+    _prefs.setBool(BLANG, false);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(GLANG, false);
+    _prefs.setBool(HLANG, false);
+    _prefs.setBool(KALANG, false);
+    _prefs.setBool(KNLANG, false);
+    _prefs.setBool(MALANG, true);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, false);
+    _prefs.setBool(TLANG, false);
+    _prefs.setBool(ELANG, false);
+  } else if (selectedLanguageCode == 'pa') {
+    _prefs.setBool(ALANG, false);
+    _prefs.setBool(BLANG, false);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(GLANG, false);
+    _prefs.setBool(HLANG, false);
+    _prefs.setBool(KALANG, false);
+    _prefs.setBool(KNLANG, false);
+    _prefs.setBool(MALANG, false);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, true);
+    _prefs.setBool(TLANG, false);
+    _prefs.setBool(ELANG, false);
+  } else if (selectedLanguageCode == 'te') {
+    _prefs.setBool(ALANG, false);
+    _prefs.setBool(BLANG, false);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(GLANG, false);
+    _prefs.setBool(HLANG, false);
+    _prefs.setBool(KALANG, false);
+    _prefs.setBool(KNLANG, false);
+    _prefs.setBool(MALANG, false);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, false);
+    _prefs.setBool(TLANG, true);
+    _prefs.setBool(ELANG, false);
+  } else {
+    _prefs.setBool(ALANG, false);
+    _prefs.setBool(BLANG, false);
+    _prefs.setBool(DLANG, false);
+    _prefs.setBool(GLANG, false);
+    _prefs.setBool(HLANG, false);
+    _prefs.setBool(KALANG, false);
+    _prefs.setBool(KNLANG, false);
+    _prefs.setBool(MALANG, false);
+    _prefs.setBool(MLLANG, false);
+    _prefs.setBool(PLANG, false);
+    _prefs.setBool(TLANG, false);
+    _prefs.setBool(ELANG, true);
+  }
+
+  MyApp.setLocale(context, _locale);
+}

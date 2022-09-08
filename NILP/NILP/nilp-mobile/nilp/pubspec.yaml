@@ -1,0 +1,88 @@
+name: nilp
+description: A new Flutter project.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.1+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  build_runner: ^2.0.2
+
+  cupertino_icons: ^1.0.2
+  platform: ^3.1.0
+  flutter_inappwebview: ^5.4.3+7
+  package_info_plus: ^1.4.2
+  launch_review: ^3.0.1
+  shared_preferences: ^2.0.6
+  sqflite: ^2.0.2
+  dropdown_search: ^0.6.3
+  google_fonts: ^2.3.2
+  flutter_windowmanager: ^0.2.0
+  easy_localization: ^3.0.0
+  fluttertoast: ^8.0.8
+  http: ^0.13.0
+  encrypt: ^5.0.1
+  provider: ^6.0.0
+  pointycastle: ^3.3.4
+  cryptography: ^2.0.2
+  tuple: ^2.0.0
+  flutter_animation_progress_bar: ^2.0.1
+#  encryptions: ^1.0.0
+  cached_network_image: ^3.1.0
+  flutter_svg: ^0.21.0
+  data_connection_checker: ^0.3.4
+  connectivity_plus: ^2.0.2
+  pin_code_fields: ^7.3.0
+  expansion_tile_card: ^2.0.0
+  percent_indicator: ^4.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^1.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - images/
+
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: fonts/Domine.ttf
+        - asset: fonts/Domine-Bold.ttf
+        - asset: fonts/Montserrat-Black.ttf
+        - asset: fonts/Montserrat-BlackItalic..ttf
+        - asset: fonts/Montserrat-Bold.ttf
+        - asset: fonts/Montserrat-BoldItalic.ttf
+        - asset: fonts/Montserrat-ExtraBold.ttf
+        - asset: fonts/Montserrat-ExtraBoldItalic.ttf
+        - asset: fonts/Montserrat-ExtraLight.ttf
+        - asset: fonts/Montserrat-ExtraLightItalic.ttf
+        - asset: fonts/Montserrat-Italic.ttf
+        - asset: fonts/Montserrat-Light.ttf
+        - asset: fonts/Montserrat-LightItalic.ttf
+        - asset: fonts/Montserrat-Medium.ttf
+        - asset: fonts/Montserrat-MediumItalic.ttf
+        - asset: fonts/Montserrat-Regular.ttf
+        - asset: fonts/Montserrat-SemiBold.ttf
+        - asset: fonts/Montserrat-SemiBoldItalic.ttf
+        - asset: fonts/Montserrat-Thin.ttf
+        - asset: fonts/Montserrat-ThinItalic.ttf
+
+#flutter_icons:
+#  image_path: "icon/icon_1.png"
+#  android: true
+
+
+
