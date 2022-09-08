@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:forceDarkAllowed="false"
+    android:orientation="vertical"
+    tools:context="com.np.namasteyoga.ui.eventModule.event.EventActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/buttonColorLayout"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include layout="@layout/toolbar_black_with_back" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin5x2"
+            android:weightSum="3">
+
+            <include
+                android:id="@+id/btnCurrent"
+                layout="@layout/button_light_colored_layout"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin5x1"
+                android:layout_marginEnd="@dimen/margin5x1"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/btnUpcoming"
+                layout="@layout/button_light_colored_layout"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin5x1"
+                android:layout_marginEnd="@dimen/margin5x1"
+                android:layout_weight="1" />
+
+            <include
+                android:id="@+id/btnPast"
+                layout="@layout/button_light_colored_layout"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin5x1"
+                android:layout_marginEnd="@dimen/margin5x1"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one"
+            android:background="@color/light_gray_" />
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/button_colored_layout_without_round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

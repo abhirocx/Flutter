@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:forceDarkAllowed="false"
+    tools:context=".ui.register.fragments.TrainerFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin5x2"
+    android:orientation="vertical">
+    <include layout="@layout/edit_text_layout"
+        android:id="@+id/etTrainerName"/>
+    <include layout="@layout/edit_text_layout"
+        android:id="@+id/etEmailId"/>
+    <include layout="@layout/edit_text_layout_with_img"
+        android:id="@+id/etPassword"/>
+    <include layout="@layout/edit_text_layout_with_img"
+        android:id="@+id/etConfirmPassword"/>
+    <include layout="@layout/edit_text_layout"
+        android:id="@+id/etCertificateNo"/>
+    <include layout="@layout/edit_text_layout"
+        android:id="@+id/etMobile"/>
+    <include layout="@layout/edit_text_layout_with_img"
+        android:id="@+id/etLocation"/>
+    <include layout="@layout/edit_text_layout_with_img"
+        android:id="@+id/etAddress"/>
+    <include layout="@layout/edit_text_layout_with_img"
+        android:id="@+id/etChooseCity"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="@string/choose_trainer_as"
+        android:textSize="@dimen/text_sp16"
+        android:fontFamily="@font/lato_bold"
+        android:layout_marginTop="@dimen/margin5x2"
+        android:layout_marginStart="@dimen/margin5x5"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding4x4"
+        android:layout_marginStart="@dimen/margin5x5"
+        android:layout_marginEnd="@dimen/margin5x5"
+
+        android:orientation="horizontal">
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3.6"
+            android:id="@+id/trainerType"
+            tools:ignore="UselessParent">
+        <RadioButton
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen3x1"
+            android:paddingEnd="@dimen/zero"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="@dimen/text_sp14"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:checked="true"
+            android:tag="@string/_public"
+            android:id="@+id/publicTrainer"
+            android:textColor="@color/radio_text_color"
+            android:text="@string/public_"/>
+        <RadioButton
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen3x1"
+            android:paddingEnd="@dimen/zero"
+            android:layout_weight="1.1"
+            android:tag="@string/_private"
+            android:singleLine="true"
+            android:id="@+id/privateTrainer"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="@dimen/text_sp14"
+            android:textColor="@color/radio_text_color"
+            android:text="@string/private_"/>
+        <RadioButton
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/dimen3x1"
+            android:paddingEnd="@dimen/zero"
+            android:fontFamily="@font/lato_bold"
+            android:layout_weight="1.5"
+            android:id="@+id/govtTrainer"
+            android:singleLine="true"
+            android:tag="@string/_govt"
+            android:textSize="@dimen/text_sp14"
+            android:textColor="@color/radio_text_color"
+            android:text="@string/government"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/margin5x5"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_terms_n_conditions"
+            android:checked="true"
+            android:text="@string/yes_i_agree_to_the"
+            android:fontFamily="@font/lato_bold"
+            android:maxLines="2"
+            android:minLines="2"
+            android:buttonTint="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/tv_terms_n_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen3x1"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:padding="@dimen/padding4x1"
+            android:focusable="true"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/terms_and_conditions_text"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <include layout="@layout/button_colored_layout"
+        android:layout_marginStart="@dimen/margin5x5"
+        android:layout_marginEnd="@dimen/margin5x5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin5x4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/already_have_account"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/lato_bold"
+            android:padding="@dimen/margin5x1"
+            android:background="?android:selectableItemBackground"
+            android:text="@string/login_here"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

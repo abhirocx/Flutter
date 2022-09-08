@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:forceDarkAllowed="false"
+    tools:context=".ui.register.fragments.GuestUserFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin5x2"
+    android:orientation="vertical">
+    <include layout="@layout/edit_text_layout"
+        android:id="@+id/etFullName"/>
+    <include layout="@layout/edit_text_layout"
+        android:id="@+id/etEmailId"/>
+    <include layout="@layout/edit_text_layout"
+        android:id="@+id/etMobile"/>
+    <include layout="@layout/edit_text_layout_with_img"
+        android:id="@+id/etPassword"/>
+    <include layout="@layout/edit_text_layout_with_img"
+        android:id="@+id/etConfirmPassword"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/margin5x5"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkbox_terms_n_conditions"
+            android:checked="true"
+            android:text="@string/yes_i_agree_to_the"
+            android:fontFamily="@font/lato_bold"
+            android:maxLines="2"
+            android:minLines="2"
+            android:buttonTint="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/tv_terms_n_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/dimen3x1"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:padding="@dimen/padding4x1"
+            android:focusable="true"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/terms_and_conditions_text"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </LinearLayout>
+
+    <include layout="@layout/button_colored_layout"
+        android:layout_marginStart="@dimen/margin5x5"
+        android:layout_marginEnd="@dimen/margin5x5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin5x4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@null"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/already_have_account"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/lato_bold"
+            android:padding="@dimen/margin5x1"
+            android:background="?android:selectableItemBackground"
+            android:text="@string/login_here"
+            android:textColor="@color/colorPrimaryDark" />
+    </LinearLayout>
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

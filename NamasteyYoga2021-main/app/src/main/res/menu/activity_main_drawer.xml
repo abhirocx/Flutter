@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/myAccount"
+            android:icon="@drawable/ic_user"
+            android:title="@string/my_accounts" />
+        <item
+            android:id="@+id/myEvent"
+            android:icon="@drawable/ic_events"
+            android:title="@string/my_events" />
+
+
+    </group>
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/trainer"
+            android:icon="@drawable/ic_trainer"
+            android:title="@string/yoga_trainers" />
+        <item
+            android:id="@+id/center"
+            android:icon="@drawable/ic_yoga_centers"
+            android:title="@string/yoga_centers" />
+        <item
+            android:id="@+id/asana"
+            android:icon="@drawable/ic_asana"
+            android:title="@string/yoga_asana" />
+<!--        <item-->
+<!--            android:id="@+id/ayush"-->
+<!--            android:icon="@drawable/ic_ayush_merchandise"-->
+<!--            android:title="@string/ayush_merchandise" />-->
+
+                <item
+                    android:id="@+id/celebrity"
+                    android:icon="@drawable/ic_testimonials"
+                    android:title="@string/celebrity_testimonial" />
+
+
+        <item
+            android:id="@+id/health"
+            android:icon="@drawable/ic_health"
+            android:title="@string/health_fitness_activity" />
+
+    </group>
+    <group
+        android:id="@+id/group3"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/quiz"
+            android:icon="@drawable/ic_quiz"
+            android:title="@string/quiz" />
+        <item
+            android:id="@+id/poll"
+            android:icon="@drawable/ic_poll"
+            android:title="@string/poll" />
+        <item
+            android:id="@+id/feedback"
+            android:icon="@drawable/ic_rating"
+            android:title="@string/feedback" />
+<!--        <item-->
+<!--            android:id="@+id/bhuvan"-->
+<!--            android:icon="@drawable/ic_bhuvan"-->
+<!--            android:title="@string/bhuvan_app" />-->
+
+    </group>
+    <group
+        android:id="@+id/group4"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/social"
+            android:icon="@drawable/ic_social_media"
+            android:title="@string/social_media" />
+        <item
+            android:id="@+id/privacy"
+            android:icon="@drawable/ic_privacy_policy"
+            android:title="@string/privacy_policy" />
+
+        <item
+            android:id="@+id/share"
+            android:icon="@drawable/ic_app_share"
+            android:title="@string/share_app_title" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings"
+            android:title="@string/settings" />
+
+
+
+    </group>
+
+
+</menu>

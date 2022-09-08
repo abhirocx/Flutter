@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin5x3"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/editText"
+        android:inputType="numberPassword"
+        android:paddingTop="@dimen/margin5x1"
+        android:singleLine="true"
+        android:maxLength="6"
+        android:maxLines="1"
+        android:letterSpacing=".5"
+        android:gravity="center"
+        android:fontFamily="@font/lato_bold"
+        android:textColorHint="@color/hint_color"
+        android:textSize="28sp"
+        android:importantForAutofill="no"
+        android:paddingStart="@dimen/margin5x2"
+        android:paddingEnd="@dimen/margin5x2"
+        android:hint="@string/enterOTP"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one"
+        android:layout_marginStart="@dimen/margin5x2"
+        android:layout_marginEnd="@dimen/margin5x2"
+        android:layout_marginTop="@dimen/margin5x3"
+        android:background="@color/divider_color"/>
+
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_margin="@dimen/padding3x4">
+
+        <ImageView
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/et_height_80"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_place_holder"
+            android:layout_marginEnd="@dimen/margin5x1"
+            android:layout_marginTop="@dimen/margin5x1"
+            android:id="@+id/image"/>
+
+        <LinearLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin5x1"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="@dimen/text_sp16"
+                android:paddingTop="@dimen/zero"
+                android:paddingBottom="@dimen/zero"
+                android:textColor="@color/black"
+                android:text="@string/n_a"/>
+
+            <TextView
+                android:id="@+id/tvDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding4x2"
+                android:textSize="@dimen/text_sp14"
+                android:maxLines="3"
+                android:fontFamily="@font/lato"
+                android:ellipsize="end"
+                android:textColor="@color/black"
+                android:text="@string/n_a"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one"
+        android:background="@color/divider_color_"/>
+
+</LinearLayout>

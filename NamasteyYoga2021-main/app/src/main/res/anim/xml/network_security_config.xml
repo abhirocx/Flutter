@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <base-config cleartextTrafficPermitted="false" />
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">yogalocator.ayush.gov.in</domain>
+        <domain includeSubdomains="true">namasteyoga.inroad.in</domain>
+        <domain includeSubdomains="true">yogalocator.inroad.in</domain>
+        <domain includeSubdomains="true">yogalocator.php.npglobal.in</domain>
+        <domain includeSubdomains="true">namaste-yoga.ayush.gov.in</domain>
+    </domain-config>
+</network-security-config>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:forceDarkAllowed="false"
+    android:background="@color/bg_grey"
+    tools:context="com.np.namasteyoga.ui.updateAccount.center.CenterAccountUpdateActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero"
+        android:contentDescription="@string/app_gradient_background"
+        android:src="@drawable/app_gradiant_background_3"
+        app:layout_constraintBottom_toBottomOf="@id/line1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/padding4x4"
+        android:layout_marginTop="@dimen/et_height_30"
+        android:layout_marginEnd="@dimen/padding4x4"
+        android:layout_marginBottom="@dimen/margin5x2"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_back_white"
+                android:padding="@dimen/margin5x1"
+                android:layout_gravity="center"
+                app:tint="@color/text_black_"
+                android:contentDescription="@string/back"
+                android:layout_marginEnd="@dimen/margin5x1"
+                android:id="@+id/bigBack"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_black"
+                    android:text="@string/edit_account"
+                    android:textColor="@color/text_black_"
+                    android:textSize="@dimen/text_sp24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding3x4"
+                    android:fontFamily="@font/lato_bold"
+                    android:visibility="gone"
+                    android:paddingStart="@dimen/zero"
+                    android:paddingEnd="@dimen/et_height_50"
+                    android:text="@string/enter_your_email_id_below_and_we_will_send_you_an_otp_to_reset_your_password"
+                    android:textColor="@color/text_black_"
+                    android:textSize="@dimen/text_sp14" />
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin5x1"
+            android:layout_marginTop="@dimen/et_height_55"
+            android:layout_marginEnd="@dimen/margin5x1"
+            android:layout_marginBottom="@dimen/margin5x2"
+            app:cardCornerRadius="@dimen/padding4x2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin5x4"
+                android:orientation="vertical">
+                <include layout="@layout/my_account_edit_text"
+                    android:id="@+id/etCenterName"/>
+                <requestFocus/>
+                <include layout="@layout/my_account_edit_text_email"
+                    android:id="@+id/etEmailId"/>
+                <include layout="@layout/my_account_edit_text"
+                    android:id="@+id/etMobile"/>
+                <include layout="@layout/my_account_edit_text"
+                    android:id="@+id/etSittingCapacity"/>
+                <include layout="@layout/my_account_edit_text"
+                    android:id="@+id/etLocation"/>
+                <include layout="@layout/my_account_edit_text"
+                    android:id="@+id/etAddress"/>
+
+                <include layout="@layout/my_account_edit_text"
+                    android:id="@+id/etChooseCity"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/margin5x4"
+                    android:layout_height="@dimen/one"/>
+                <include layout="@layout/button_colored_layout"
+                    android:layout_marginStart="@dimen/margin5x5"
+                    android:layout_marginEnd="@dimen/margin5x5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

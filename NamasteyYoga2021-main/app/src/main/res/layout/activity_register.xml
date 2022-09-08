@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:forceDarkAllowed="false"
+    android:background="@color/bg_grey"
+    tools:context=".ui.register.RegisterActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero"
+        android:contentDescription="@string/app_gradient_background"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/app_gradiant_background_3"
+        app:layout_constraintBottom_toBottomOf="@id/line1"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias=".3"
+        android:id="@+id/line1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/et_height_30"
+        android:layout_marginStart="@dimen/padding4x4"
+        android:layout_marginEnd="@dimen/padding4x4"
+        android:layout_marginBottom="@dimen/margin5x2"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_sp24"
+            android:textColor="@color/text_black_"
+            android:text="@string/register_"
+            android:fontFamily="@font/lato_black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_black_"
+            android:textSize="@dimen/text_sp14"
+            android:id="@+id/detailRegister"
+            android:layout_marginTop="@dimen/padding3x4"
+            android:fontFamily="@font/lato_bold"
+            android:paddingEnd="@dimen/et_height_50"
+            android:text="@string/please_provide_all_required_details_to_register_as_a_s"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="@dimen/padding4x2"
+            android:layout_marginBottom="@dimen/margin5x2"
+            android:layout_marginStart="@dimen/margin5x1"
+            android:layout_marginEnd="@dimen/margin5x1"
+            android:layout_marginTop="@dimen/margin5x4">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/tab_layout"
+                    app:tabMode="fixed"
+                    app:tabIconTint="@color/black"
+                    app:tabTextColor="@color/black"
+                    app:tabIndicatorHeight="@dimen/two"
+                    app:tabIndicatorFullWidth="true"
+                    android:background="@drawable/tab_background"
+                    app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+                    app:tabSelectedTextColor="@color/colorPrimaryDark"
+                    app:tabIndicatorColor="@color/colorPrimaryDark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+            
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

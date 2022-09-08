@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/et_width_150"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/margin5x2"
+    android:orientation="vertical">
+    <!--    <androidx.cardview.widget.CardView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/hundraded"-->
+    <!--        android:layout_marginTop="@dimen/margin5x1"-->
+    <!--        android:layout_marginBottom="@dimen/margin5x1"-->
+    <!--        android:layout_marginEnd="@dimen/margin5x1"-->
+    <!--        android:layout_marginStart="@dimen/margin5x2"-->
+    <!--        app:cardCornerRadius="@dimen/margin5x2"-->
+    <!--        >-->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/youtubeImage"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="@dimen/et_width_150"
+            android:layout_height="@dimen/hundraded"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_place_holder" />
+
+        <ImageView
+            android:id="@+id/youtubeClick"
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/zero"
+            android:visibility="gone"
+            android:contentDescription="@string/event_video"
+            android:src="@drawable/ic_youtube_icon"
+            android:padding="@dimen/et_height_30"
+            app:layout_constraintBottom_toBottomOf="@id/youtubeImage"
+            app:layout_constraintEnd_toEndOf="@id/youtubeImage"
+            app:layout_constraintStart_toStartOf="@id/youtubeImage"
+            app:layout_constraintTop_toTopOf="@id/youtubeImage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    </androidx.cardview.widget.CardView>-->
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/two"
+        android:layout_marginTop="@dimen/margin5x1"
+        android:layout_marginEnd="@dimen/two"
+        android:fontFamily="@font/lato_bold"
+        android:paddingBottom="@dimen/dimen3x1"
+        android:singleLine="true"
+        android:text="@string/n_a"
+        android:textColor="@color/black" />
+
+
+</LinearLayout>

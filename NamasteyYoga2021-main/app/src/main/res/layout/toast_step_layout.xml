@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/et_width_150"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardPreventCornerOverlap="false"
+    android:backgroundTint="#191717"
+    app:cardCornerRadius="@dimen/padding4x2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding3x4">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:id="@+id/stepCount"
+            android:drawableStart="@drawable/ic_steps"
+            android:text="@string/_0_steps"
+            android:drawablePadding="@dimen/padding3x4"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:id="@+id/calCount"
+            android:layout_marginTop="@dimen/padding3x4"
+            android:drawableStart="@drawable/ic_calory_toast"
+            android:text="@string/_0_cal"
+            android:drawablePadding="@dimen/padding3x4"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:id="@+id/distanceCount"
+            android:layout_marginTop="@dimen/padding3x4"
+            android:drawableStart="@drawable/ic_kilometer_toast"
+            android:text="@string/_0_km"
+            android:drawablePadding="@dimen/padding3x4"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

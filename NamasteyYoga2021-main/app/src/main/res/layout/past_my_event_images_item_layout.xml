@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/et_width_130"
+        android:layout_height="@dimen/zero"
+        android:layout_marginStart="@dimen/margin5x4"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/add_photo"
+        app:layout_constraintDimensionRatio="13:11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/margin5x2"
+        android:paddingBottom="@dimen/margin5x2"
+        android:paddingTop="@dimen/margin5x1"
+        android:paddingEnd="@dimen/margin5x1"
+        android:contentDescription="@string/cancel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="?android:selectableItemBackground"
+        app:tint="@color/red"
+        android:id="@+id/close"
+        android:src="@drawable/ic_close_"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

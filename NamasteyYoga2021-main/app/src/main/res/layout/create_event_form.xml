@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/llHeader"
+    android:layout_margin="15dp"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:forceDarkAllowed="false"
+    android:isScrollContainer="false"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:theme="@style/inputTextTheme">
+
+            <AutoCompleteTextView
+                android:id="@+id/etEventName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890._-, "
+                android:hint="@string/event_name"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:maxLength="25"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint_color"
+                android:textSize="12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/tvStartDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:drawableRight="@drawable/date_time"
+                android:drawableTint="@color/version_2_blue"
+                android:editable="false"
+                android:hint="@string/start_date_time"
+                android:imeOptions="actionNext"
+
+                android:inputType="none"
+                android:paddingRight="@dimen/padding4x2"
+                android:paddingBottom="12dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint_color"
+                android:textSize="12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/tvEventEndDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:drawableRight="@drawable/date_time"
+                android:drawableTint="@color/version_2_blue"
+                android:editable="false"
+                android:hint="@string/end_date_time"
+                android:imeOptions="actionNext"
+                android:inputType="none"
+                android:paddingRight="@dimen/padding4x2"
+                android:paddingBottom="12dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint_color"
+                android:textSize="12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <EditText
+            android:id="@+id/etSeatingCapacity"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_height_40"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:animateLayoutChanges="true"
+            android:drawablePadding="10dp"
+            android:hint="@string/sitting_capacity"
+            android:inputType="number"
+            android:maxLength="5"
+            android:nextFocusForward="@+id/etAddressManual"
+            android:paddingLeft="5dp"
+            android:paddingRight="15dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etAddressManual"
+            style="@style/Base.Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            android:animateLayoutChanges="true"
+            android:drawableRight="@drawable/location_et"
+            android:drawablePadding="10dp"
+            android:hint="@string/address"
+            android:inputType="textEmailAddress"
+            android:nextFocusForward="@+id/etPassword"
+            android:paddingLeft="5dp"
+            android:paddingRight="@dimen/padding4x2"
+            android:paddingBottom="12dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:theme="@style/inputTextTheme" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:theme="@style/inputTextTheme">
+
+            <AutoCompleteTextView
+                android:id="@+id/etAddress"
+                style="@style/Base.Widget.AppCompat.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:drawableRight="@drawable/location_et"
+                android:drawableTint="@color/version_2_blue"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:hint="@string/gps_location"
+                android:imeOptions="actionNext"
+                android:inputType="none"
+                android:paddingRight="@dimen/padding4x2"
+                android:paddingBottom="12dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint_color"
+                android:textSize="12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:theme="@style/inputTextTheme"
+            android:visibility="visible">
+
+            <AutoCompleteTextView
+                android:id="@+id/etSelectCity"
+                style="@style/Base.Widget.AppCompat.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/et_height_40"
+                android:layout_gravity="center"
+                android:animateLayoutChanges="true"
+                android:clickable="true"
+                android:drawableTint="@color/version_2_blue"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:hint="@string/selectCity"
+                android:inputType="none"
+                android:nextFocusForward="@+id/etPassword"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint_color"
+                android:textSize="12sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:theme="@style/inputTextTheme">
+
+            <EditText
+                android:id="@+id/etEventDescription"
+                style="@style/Base.Widget.AppCompat.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:drawablePadding="@dimen/margin5x1"
+                android:gravity="top"
+                android:hint="@string/event_description"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:minHeight="35dp"
+                android:minLines="5"
+                android:paddingStart="5dp"
+                android:paddingTop="@dimen/margin5x1"
+                android:paddingEnd="@dimen/margin5x1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint_color"
+                android:textSize="12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:theme="@style/inputTextTheme">
+
+            <AutoCompleteTextView
+                android:id="@+id/etJoiningInstruction"
+                style="@style/Base.Widget.AppCompat.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:drawablePadding="@dimen/margin5x1"
+                android:gravity="top"
+                android:hint="@string/joining_instructions"
+                android:imeOptions="actionNext"
+                android:inputType="textMultiLine"
+                android:minHeight="35dp"
+                android:minLines="5"
+                android:paddingStart="5dp"
+                android:paddingTop="@dimen/margin5x1"
+                android:paddingEnd="@dimen/margin5x1"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint_color"
+                android:textSize="12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:paddingTop="@dimen/dimen_10"
+            android:text="@string/details_of_event_coordinator"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_sp14"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:theme="@style/inputTextTheme">
+
+            <AutoCompleteTextView
+                android:id="@+id/tvContactName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz' "
+                android:hint="@string/name"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint_color"
+                android:textSize="12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:theme="@style/inputTextTheme">
+
+            <AutoCompleteTextView
+                android:id="@+id/tvPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:digits="1234567890"
+                android:hint="@string/contact_no"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint_color"
+                android:textSize="12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:theme="@style/inputTextTheme">
+
+            <AutoCompleteTextView
+                android:id="@+id/tvEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:editable="false"
+                android:hint="@string/email_id"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint_color"
+                android:textSize="12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:theme="@style/inputTextTheme">
+
+            <AutoCompleteTextView
+                android:id="@+id/tvMeetingLink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:hint="@string/meeting_link"
+                android:imeOptions="actionDone"
+                android:inputType="textCapWords"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textColorHint="@color/hint_color"
+                android:textSize="12sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="15dp"
+                android:buttonTint="@color/version_2_blue"
+                android:checked="true"
+                android:text="@string/free"
+                android:visibility="visible" />
+
+            <CheckBox
+                android:id="@+id/isHighlight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/et_height_50"
+                android:layout_marginTop="15dp"
+                android:buttonTint="@color/version_2_blue"
+                android:text="@string/ishiglight"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/description"
+            android:visibility="gone" />
+
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@drawable/rounded_corners_grey_v2"
+            android:gravity="top"
+            android:hint="@string/description_max"
+            android:inputType="text"
+            android:maxLines="4"
+            android:minHeight="150dp"
+            android:padding="15dp"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/rlSubmitEvent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_height_40"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/submit_button">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>

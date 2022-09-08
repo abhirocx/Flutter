@@ -1,0 +1,419 @@
+<resources>
+    <string name="app_name">नमस्‍ते- योग</string>
+
+
+    <string name="use_current_loc">मेरी वर्तमान लोकेशन का प्रयोग करें</string>
+    <string name="yoga_centers">योग केन्‍द्र  </string>
+    <string name="yoga_trainers">योग प्रशिक्षक </string>
+    <string name="password">पासवर्ड</string>
+    <string name="login">लॉगइन</string>
+    <string name="forgot_password">पासवर्ड भूल गए?</string>
+    <string name="forgot_password_">पासवर्ड भूल गए</string>
+    <string name="dont_have_account">अकाउन्‍ट नहीं है।</string>
+    <!--    <string name="forgot_password_text">Enter your email id below and we will send you an OTP to reset your password.</string>-->
+    <string name="email_id">ई- मेल आई डी </string>
+    <string name="submit">प्रस्‍तुत करें </string>
+
+    <string name="register">पंजीकृत (रजिस्‍टर) करें </string>
+
+    <string name="contact_number">संपर्क (कोन्‍टेक्‍ट) नम्‍बर </string>
+    <string name="address">पता </string>
+    <string name="city">शहर</string>
+    <string name="trainer_as">प्रशिक्षक जैसे </string>
+    <string name="already_have_account">पहले से ही अकाउन्‍ट है ?</string>
+    <string name="center_name">केन्‍द्र का नाम </string>
+    <string name="reset_password">पासवर्ड पुन: बनाये</string>
+    <string name="rest_passwrd_text">नीचे ओ टी पी  दर्ज करें और पुन: पासवर्ड बनाए </string>
+    <string name="enterOTP">ओ टी पी </string>
+    <string name="dont_recv_otp">ओ टी पी प्राप्‍त नहीं हुआ?</string>
+    <string name="resendOTP">ओ टी पी पुन: भेजें</string>
+    <!--    <string name="cnfrm_passwrd">Confirm Password</string>-->
+    <!--    <string name="new_passwrd">New Password</string>-->
+    <!--    <string name="splash_text">Yoga\nLocator</string>-->
+<!--    <string name="yoga_events">Yoga Events</string>-->
+<!--    <string name="yoga_events">घटना सूची</string>-->
+    <string name="yoga_events">घटना सूची</string>
+    <string name="no_events">दुर्भाग्‍यवश आपके शहर में फिलहाल कोई कार्यक्रम  नहीं है।</string>
+    <string name="no_events_notify">यदि आपके शहर में योग का कोई कार्यक्रम चलाया जाता है तो उसकी जानकारी हेतु नोटिफाई बटन को दबायें।</string>
+    <string name="no_trainers">दुर्भाग्‍यवश आपके शहर में अभी कोई योग प्रशिक्षक नहीं है।</string>
+    <string name="no_trainers_notify">यदि आपके शहर में कोई योग प्रशिक्षक जुड़ता है और आप उसकी जानकारी चाहते हैं तो सूचना (नोटिफाई) बटन को दबाएँ। </string>
+    <string name="no_centers">दुर्भाग्यवश आपके शहर में अभी कोई केंद्र नहीं है। </string>
+    <string name="no_centers_notify">यदि आपके शहर में कोई योग केन्द्र खोला जाता है और आप उसकी जानकारी चाहते हैं तो सूचना (नोटिफाई) बटन दबाएँ। </string>
+
+
+    <string name="notify_me">मुझे सूचित करें </string>
+    <string name="enter_detail">अपना विवरण भरें।</string>
+    <string name="phone_number">फोन नम्‍बर </string>
+    <string name="search_city">शहर के नाम से खोजें </string>
+    <string name="full_name">पूरा नाम </string>
+    <string name="feedback">फीडबैक </string>
+    <string name="search_center">केन्द्र के नाम पर खोजें </string>
+<!--    <string name="create_event">कार्यक्रम बनाएँ</string>-->
+    <string name="create_event">कार्यक्रम बनायें </string>
+    <!--    <string name="create_my_event">CREATE EVENT</string>-->
+    <string name="event_name">कार्यक्रम  का नाम </string>
+    <string name="contact_name">सम्‍पर्क नम्‍बर </string>
+    <string name="event_start_date_time">कार्यक्रम के शुरू होने की तिथि </string>
+    <string name="event_end_date_time">कार्यक्रम के समाप्त होने की तिथि</string>
+    <string name="free">नि:शुल्क </string>
+    <string name="ishiglight">झलकियाँ </string>
+    <string name="description">विवरण</string>
+    <string name="description_max">अधिकतम 100 वर्णों में विवरण दें </string>
+    <!--    <string name="center_name_required">Name Required</string>-->
+    <!--    <string name="password_required">Password is required</string>-->
+    <!--    <string name="email_required">please enter email</string>-->
+    <string name="contact_required">कृपया सम्‍पर्क नम्‍बर डालें </string>
+    <!--    <string name="address_required">please enter address</string>-->
+    <string name="email_is_not_valid">अमान्‍य ई-मेल</string>
+    <!--    <string name="password_too_short">Password is too short</string>-->
+    <!--    <string name="search_trainer">Search by trainer name</string>-->
+    <!--    <string name="help">Help</string>-->
+    <string name="logout">लॉगआउट</string>
+    <string name="cant_be_blank">रिक्त नहीं रख सकते</string>
+    <!--    <string name="please_enter_email">Please enter your email</string>-->
+
+    <!--    <string name="title_activity_search_city">ActivitySearchCity</string>-->
+    <string name="select_city">कृपया अपने शहर का चयन करें। </string>
+    <string name="selectCity">शहर का चयन करें </string>
+    <string name="chooseCity">शहर चुने</string>
+    <string name="type_city">शहर का नाम टंकित करें </string>
+    <string name="it_is_mandatory_to_update_the_app">नये संस्करण का एप अब उपलब्ध है। कृपया इसे अपडेट करें और आगे बढ़े। </string>
+    <string name="update_required">अपडेट करें। </string>
+    <string name="no">नहीं </string>
+    <string name="yes">हाँ</string>
+    <string name="update">अपडेट करें </string>
+    <string name="eventsecondtext">आपके शहर में यदि कोई कार्यक्रम सूचीबद्ध होता है तो आपको सूचित करने हेतु नोटिफाई बटन को दबाएँ।</string>
+    <string name="eventMiddleText">फिलहाल आपके शहर में कोई कार्यक्रम सूचीबद्ध दिखाई नहीं पड़ रहा है।</string>
+    <string name="no_internet">इंटरनेट नहीं है</string>
+    <string name="please_check_internet">कृपया अपना इंटरनेट कनेक्शन चेक (जाँचे) करें!</string>
+    <string name="ok">ओके</string>
+    <string name="iagree">मैं सहमत हूँ।</string>
+
+    <string name="disclaimer">खण्‍डन</string>
+    <string name="disclaimer_text">आपके एप के उपयोगकर्ताओं को सूचना प्रदान करने हेतु इस एैप में विषय सूची उपलब्ध करवाई गई है।  आपसे निवेदन है कि अनिवार्य हो, वहाँ सूचनाओं की प्रमाणिकता को स्वयं सत्यापित करें। ‍  </string>
+    <string name="_successfully">सफलतापूर्वक</string>
+    <string name="type_center">केन्द्र का नाम टंकित करें</string>
+    <string name="type_trainer">प्रशिक्षक का नाम टंकित करें </string>
+    <string name="type_event">कार्यक्रम का नाम टंकित करें </string>
+    <string name="are_you_sure_you_want_to_add">आप सुनिश्चित करें कि इस कार्यक्रम को कैलेंडर में जोड़ा जाए?</string>
+
+    <string name="alert">सावधान</string>
+    <string name="my_events">मेरे कार्यक्रम </string>
+    <string name="change_password">पासवर्ड बदलें</string>
+    <string name="my_accounts">मेरा अकाउन्‍ट </string>
+<!--    <string name="edit_event">घटना संपादित करें</string>-->
+    <string name="edit_event">कार्यक्रम में फेरबदल करें </string>
+    <string name="edit_account">अकाउन्‍ट में फेरबदल करें</string>
+    <string name="save">सुरक्षित करें</string>
+    <string name="old_password">पुराना पासवर्ड</string>
+    <string name="new_password">नया पासवर्ड</string>
+    <string name="confirm_password">पासवर्ड की पुष्टि करें</string>
+    <string name="please_enter_valid_mobile_number">कृपया वैध मोबाइल नम्‍बर दर्ज करें</string>
+    <string name="number_strts_with_zero">शून्य से प्रारंभ नहीं कर सकते </string>
+    <string name="password_should_be_8_15_characters_with_at_least_1_nummeric">पासवर्ड 8 से 15 वर्णों का हो जिसमें अपर/लोअर केस स्पेशल सिम्‍बल व नम्बर सम्मिलित हों। </string>
+    <string name="do_u_like_this_event">क्या आपको यह कार्यक्रम पसंद आया है?</string>
+    <string name="give_us_rate">यह जानने के लिए कि आपके यह कार्यक्रम कितना पसंद आया को जानने हेतु हमें तुरंत श्रेणीबद्ध करें। </string>
+    <string name="current_city">वर्तमान शहर</string>
+    <string name="nearest_city">नजदीकी शहर</string>
+    <string name="current_city_text">यदि आप किसी शहर में रहते हैं तो वर्तमान शहर का विकल्प चुनें। </string>
+    <string name="nearest_city_text">यदि आप शहर में नहीं रहते है तब आप नजदीकी शहर का विकल्प चुनें।</string>
+    <string name="current_event_city_text">यदि कार्यक्रम आपके शहर में किया जा रहा है तो वर्तमान शहर का विकल्प चुनें।</string>
+    <string name="nearest_event_city_text">यदि कार्यक्रम आपके शहर में नहीं किया जा रहा है तो नजदीकी शहर का विकल्प चुनें।</string>
+    <string name="current_events">वर्तमान</string>
+    <string name="upcoming_events">आगामी</string>
+    <string name="past_events">विगत</string>
+    <string name="private_trainer">नि‍जी प्रशिक्षक </string>
+    <string name="public_trainer">सार्वजनिक प्रशिक्षक</string>
+    <string name="govt_trainer">सरकारी प्रशिक्षक</string>
+    <string name="select_type">प्रकार चुने </string>
+    <string name="after_otp">आपके पंजीकरण का विवरण एडमिनिस्ट्रेटर की स्वीकृति हेतु भेजा जा चुका है। स्वीकृत होने पर आपकी विषय सूची नमस्ते योग एप पर दिखाई देगी।</string>
+
+    <string name="trainer">प्रशिक्षक</string>
+    <string name="trainer_name">प्रशिक्षक का नाम </string>
+    <string name="s_name">%s नाम</string>
+    <string name="centre">केन्द्र</string>
+    <string name="full">पूरा</string>
+    <string name="centre_name">केन्‍द्र का नाम </string>
+    <string name="guest">अति‍थि</string>
+    <string name="guest_name">पूरा नाम </string>
+
+    <string name="_private">Private</string>
+    <string name="_public">Public</string>
+    <string name="private_">निजी</string>
+    <string name="public_">सार्वजनिक</string>
+    <string name="_govt">Govt</string>
+
+    <string name="certificate_number">प्रमाण-पत्र संख्‍या</string>
+    <string name="mobile_number">मोबाइल नम्‍बर </string>
+    <string name="sitting_capacity">कितने लोगों के बैठने की जगह है।</string>
+    <string name="please_enter_ycb_certificate_number">कृपया वाई सी बी प्रमाण – पत्र संख्‍या दर्ज करें।</string>
+    <string name="password_should_be_3_15_characters_with_at_least_1_nummeric">अक्षरों व संख्या को मिलाकर प्रमाण-पत्र की संख्या कम से कम 3 से 15 अक्षरों का होना आवश्यक है। </string>
+    <string name="suspend_account">निलम्बित अकाउन्‍ट</string>
+    <string name="terms_and_conditions_text">शर्तें और उपयोग।</string>
+    <string name="terms_and_conditions">शर्तें और उपयोग।</string>
+    <string name="terms_and_conditions_msg">कृपया शर्तों और उपयोग से सहमत हों</string>
+    <string name="yes_i_agree_to_the">हाँ, मैं सहमत हूँ  </string>
+
+
+    <string name="onBackPressed">बैक प्रेस्सेड पर </string>
+    <string name="onCreate">बनायें</string>
+    <string name="loading">लोड हो रहा है। </string>
+    <string name="default_notification_channel_id">push_notification_namaste_yoga</string>
+    <string name="connection_is_required">इंटरनेट कनेक्शन की आवश्यकता है। अपना इंटरनेट कनेक्शन चेक करें और पुनः: प्रयत्न करें। </string>
+    <string name="no_internet_connection">इंटरनेट कनेक्शन नहीं है। </string>
+    <string name="something_went_wrong">कोई त्रुटि  हो गई है, पुनः: प्रयत्न करें। </string>
+    <string name="cancel">रद्द</string>
+    <string name="title">विषय</string>
+    <string name="permission_msg">अतिरिक्त कार्यप्रणालियों हेतु एप सेटिंग में कृपया स्‍टोरेज की अनुमति दें। </string>
+    <string name="permission_title">अनुमति चेतावनी </string>
+    <string name="fitness_activity">स्‍वास्‍थ्‍य कार्यक्रम </string>
+    <string name="background">पृष्‍ठभूमि</string>
+    <string name="steps">कदम</string>
+    <string name="history">इतिहास</string>
+    <string name="last_7_days_activities">पिछले सात दिनों की गतिविधियाँ </string>
+    <string name="calories">कैलोरीज </string>
+    <string name="_0">0</string>
+    <string name="_0_cal">0 कैलोरी</string>
+    <string name="_d_cal">%d कैलोरी</string>
+    <string name="_0_km">0 किलोमीटर</string>
+    <string name="_s_km">%s किलोमीटर</string>
+    <string name="goal_setting">लक्ष्‍य स्‍थापना </string>
+    <string name="_0_steps">0 कदम</string>
+    <string name="_d_steps">%d कदम</string>
+
+
+    <!--    Steps-->
+    <string name="action_settings">व्यवस्था</string>
+    <string name="permission_rationale">गूगल फिट ए पी आई के भाग के रूप में लोकेशन डाटा का प्रयोग किया गया है।</string>
+
+    <string name="permission_denied_explanation">अनुमति अस्‍वीकृति की गई, परंतु मूल कार्यक्षमता के लिए आवश्यक है। </string>
+    <string name="settings">व्यवस्था</string>
+    <string name="read_step_data">स्‍टेप डाटा पढ़े। </string>
+    <string name="n_a">लागू नहीं</string>
+    <string name="empty" />
+    <string name="trophy">ट्रॉफी </string>
+    <string name="km">कि.मी. </string>
+    <string name="no_record_found">कोई रिकॉर्ड नहीं मिला </string>
+
+
+    <string name="default_permission_msg_camera">एैप को कुछ अनिवार्य अनुमति की जरूरत है। एैप के सुगम संचालन हेतु कृपया सभी आवश्‍यक अनुमतियाँ प्रदान करें।</string>
+    <string name="default_permission_msg_location">आपको लोकेशन अनुमति प्रदान करना जरूरी है।</string>
+    <string name="title_permission">आवश्‍यक अनुमति</string>
+    <string name="permission_rationale_splash">वर्तमान लोकेशन के भाग के रूप में लोकेशन डाटा का प्रयोग किया जाता है।</string>
+
+
+    <!--    OnBoard Data-->
+    <string name="on_board_first_title">योग प्रशक्षिकों, केन्‍द्रों एवं कार्यकमों को ढूंढे। </string>
+    <string name="on_board_sec_title">योग आसन </string>
+    <!--    <string name="on_board_third_title">AAYUSH MERCHANDISE</string>-->
+    <string name="on_board_third_title">आयुष मर्चेन्‍डाइज </string>
+    <string name="on_board_four_title">स्‍वास्‍थ्‍य कार्यक्रमों को ट्रेक करें।</string>
+    <string name="on_board_first_msg">आप योग केन्‍द्रों, योग प्रशिक्षकों तथा आगामी, वर्तमान एवं पिछले कार्यक्रमों के विवरणों को प्राप्‍त कर सकते हैं और दूसरों के साथ साझा करने में सक्षम होगें।</string>
+    <string name="on_board_sec_msg">बहुत सी योग वि‍डियों आपके लिए बनाई गई है।  चाहे आप किसी भी प्रकार का योग करते हों, आपको रोज कुछ न कुछ नया आपके योग्‍य मिल जायेगा।</string>
+    <string name="on_board_third_msg">पारम्‍परिक और गैर-पारम्परिक स्‍वास्‍थ्‍य देखभाल एवं उपचार जिसमें आयुर्वेद, योग, प्राकृतिक चिकितसा, यूनानी, सि‍द्ध, सोवा रिग्‍पा एवं होमियोपैथी आदि सम्मिलित हैं।</string>
+    <string name="on_board_four_msg">आप अपनी वॉक, दौड़, कैलोरी और बहुत कुछ इस एैप पर देख सकते हैं। आप कितने कदम चले और कितनी कैलोरी खर्च हुई की जाँच कर सकते है। </string>
+
+    <string name="finish">समाप्‍त</string>
+    <string name="next">अगला</string>
+    <string name="today_target_s">आपका वर्तमान लक्ष्‍य %s है </string>
+    <string name="skip">छोड़ें</string>
+    <string name="app_gradient_background">एैप प्रवणता पृष्‍ठभूमि </string>
+<!--    <string name="please_provide_all_required_details_to_register_as_a_trainer">एक प्रशिक्षक के रूप में पंजीकृत करने हेतु कृपया सभी आवश्‍यक विवरण उपलब्‍ध कराएँ। </string>-->
+    <string name="drawable">Drawable</string>
+    <string name="choose_trainer_as">प्रशिक्षक का चयन करें जैसे । </string>
+    <string name="government">सरकारी</string>
+    <string name="login_here">यहाँ लॉगइन करें  </string>
+    <string name="back">वापसी</string>
+    <string name="select_location">लोकेशन चयन करें। </string>
+    <string name="location_permission">कृपया एैप सैटिंग में अतिरिक्‍त गतिविधियों हेतु लोकेशन की अनुमति प्रदान करें।</string>
+    <string name="no_more_data_available">और अधिक आँकड़े उपलब्‍ध नहीं है</string>
+    <string name="enter_your_email_id_below_and_we_will_send_you_an_otp_to_reset_your_password">नीचे अपनी ई-मेल आई डी दर्ज करें और हम आपको अपने पासवर्ड को पुन: तैयार करने के लिए ओ टी पी भेजेगें।  </string>
+    <string name="please_enter_username_and_password_to_login">लॉग इन हेतु कृपया अपना युजर नाम व पासवर्ड प्रविष्टि करें। </string>
+    <string name="register_here"> यहाँ नामांकन करें </string>
+    <string name="verify_otp">ओ टी पी सत्‍यापित करें </string>
+    <string name="you_re_almost_done_complete_registration_by_verifying_your_mobile_no_and_email_id">अपने मोबाइल नम्‍बर व ई-मेल आई डी को सत्‍यापित करते हुये पंजीकरण की कार्रवाई पूर्ण करें। </string>
+    <string name="enter_otp_code_sent_to_your_registered_mobile_no_and_email_id">आपके ई-मेल और मोबाइल पर भेजे गए ओ टी पी कोड की प्रविष्‍ट करें। </string>
+    <string name="please_enter_your_old_and_new_password_below">कृपया नीचे अपने पुराने व नये पासवर्ड की प्रविष्टि करें।</string>
+
+
+    <string name="please_provide">कृपया %s  उपलबध कराएँ</string>
+    <string name="not_match">%s और %s  से मेल नहीं खाते</string>
+    <string name="valid_msg">कृपया वैध %s  उपलबध कराएँ</string>
+    <string name="sitting_capacity_validation_msg">कृपया 10 से 10,000 के बीच बैठने की क्षमता प्रवि‍ष्‍ट करें। </string>
+    <string name="length_validation">कृपया 3 से 255 के बीच में %s  प्रविष्‍ट करें। </string>
+    <string name="pwd_validation_msg">कृपया संयुक्‍त रूप से संख्‍या, बड़े, छोटे व स्‍पेशल 8 से 15 अक्षरों का प्रयोग करें।</string>
+
+    <string name="pwd_hint_msg">पासवर्ड में संयुक्‍त रूप से संख्‍या, बड़े, छोटे व स्‍पेशल 8 से 15 अक्षरों का प्रयोग किया जाना चाहिए।</string>
+
+    <string name="fill_field">कृपया %s प्रविष्‍ट करें। </string>
+    <string name="get_location">लोकेशन प्राप्‍त करें </string>
+    <string name="select_city_">शहर का चयन करें </string>
+    <string name="name_count">%s (%d)</string>
+    <string name="user">उपयोगकर्त्‍ता </string>
+    <!--    <string name="s_km_away">%s km away</string>-->
+    <string name="s_km_away">%s से किमी दूर</string>
+<!--    <string name="register_login">पंजीकरण/लॉग इन </string>-->
+
+    <string name="trainer_details">प्रशिक्षक का विवरण</string>
+    <string name="center_details">केन्‍द्र का विवरण</string>
+    <string name="share">साझा करें</string>
+    <string name="navigation">पथ प्रदर्शन (नेविगेशन)</string>
+    <string name="yoga_asana">योग की विडियो</string>
+    <string name="push_notification">पुश नोटिफिकेशन </string>
+    <string name="title_activity_dashboard">डैश बोर्ड गतिविधियाँ  </string>
+<!--    <string name="navigation_drawer_open">Open navigation drawer</string>-->
+<!--    <string name="navigation_drawer_close">Close navigation drawer</string>-->
+
+
+    //////////////////////////////////////////////////////////////////////////////////////
+    <string name="menu_home">होम</string>
+    <string name="menu_gallery">गैलरी</string>
+    <string name="menu_slideshow">स्‍लाइड्स शो </string>
+    <string name="ayush_merchandise">आयुष मर्चेन्‍डाइजर </string>
+    <string name="health_fitness_activity">स्‍वास्‍थ्‍य/फिटनेश कार्यक्रम </string>
+    <string name="quiz">प्रश्‍नोत्‍तरी</string>
+    <string name="poll">मतदान</string>
+    <string name="bhuvan_app">भुवन एैप </string>
+    <string name="social_media">सोशल मीडिया </string>
+    <string name="change_language">भाषा बदलें </string>
+    <string name="back_press_msg">यदि आप एैप से बाहर होना चाहते हैं तो बैक बटन को एक बार और दबाएँ </string>
+    <string name="on_gps">कृपया जी पी एस को सक्रिय करें।</string>
+    <string name="select_city_p">कृपया शहर का चयन करें </string>
+    <string name="logout_msg">आप सुनिश्चित करें कि आप लॉग आऊट होना चाहते हैं?</string>
+    <string name="english" translatable="true">अंग्रेजी</string>
+    <string name="hindi" translatable="true">हिंदी</string>
+    <string name="working_on_that">उस पर कार्रवाई हो रही है। </string>
+    <string name="alredy_selected">पहले से ही चयनित है</string>
+    <string name="get_start">प्रारंभ करें </string>
+    <string name="get_start_msg"><![CDATA[जन जीवन में योग को अभिन्‍न अंग  बनाने और योगाभ्‍यास से लाभ प्राप्‍त करने हेतु नमस्‍ते योग एक विश्‍वव्‍यापी सूचनात्‍मक मंच होगा। आयुष मंत्रालय इन मंचों का निर्माण करेगा और हितधारकों (जनसाधारण, योग संस्‍थाओं/प्रशिक्षकों आदि) के लिए योग के लाभों,  इसका अभ्‍यास कराने और प्रचार-प्रसार की सुविधाएँ उपलब्‍ध कराएगा।]]></string>
+    <string name="welcome">स्‍वागतम्</string>
+
+    <string name="yoga_trainer">योग प्रशिक्षक </string>
+    <string name="yoga_center">योग केन्‍द्र </string>
+    <string name="yoga_trainer_">योग/प्रशिक्षक </string>
+    <string name="yoga_center_">योग/केन्द्र</string>
+    <string name="yoga_events_">योग/कार्यक्रम  </string>
+    <string name="health_fitness_">स्‍वास्‍थ्‍य/फिटनेस </string>
+    <string name="guest_user">अतिथि उपयोग कर्त्‍ता</string>
+    <string name="suspend_account_msg">फिलहाल आपका अकाउन्‍ट निलम्बित है। यदि आप अपने अकाउन्‍ट को पुन: सक्रिय करना चाहते हैं तो यश (हाँ) को दबाएँ ।</string>
+    <string name="suspend_account_confirmation_msg">कृपया सुनिश्चित करें कि आप अकाउन्‍ट निलम्बित करना चाहते हैं।</string>
+    <string name="resume_account_message">सत्‍यापन ई-मेल सफलतापूर्वक प्रेषित की।</string>
+    <string name="other_links">अन्‍य लिंक</string>
+    <string name="linkinden">लिंकिडेन</string>
+    <string name="twitter">टि्विटर</string>
+    <string name="facebook">फेसबुक</string>
+
+    <string name="share_trainer_data">प्रशिक्षक का नाम: %s, \nमोबाइल नं.: %s, \nई-मेल आई डी: %s, \nपता: %s  </string>
+    <string name="share_event_data">कार्यक्रम का नाम: %s\nसंपर्क नं.: %s\nई-मेल आई डी: %s\nपता: %s</string>
+    <string name="share_center_data">केन्‍द्र का नाम: %s\nमोबाइल नं.: %s\nEई-मेल आई डी: %s\nपता: %s</string>
+
+    <string name="getting_events">कार्यक्रम प्राप्‍त हो रहे हैं।</string>
+    <string name="listing_no">सूचीबद्ध कार्यक्रमों की संख्‍या </string>
+    <string name="select_rating">मूल्‍यांकन हेतु कृपया स्‍टार चयन करें </string>
+    <string name="tranks_foe_rating">मूल्‍यांकन हेतु धन्‍यवाद</string>
+    <string name="feedback_validation_msg">कृपया सभी प्रश्‍नों का उत्‍तर दें। </string>
+    <string name="question_d">प्रश्‍न %d</string>
+    <string name="overall_feedback">संपूर्ण प्रतिपुष्ठि </string>
+    <string name="start_rating">मूल्‍यांकन शुरू करें </string>
+    <string name="tell_us_about_a_bit_more_about_why_you_choose_4_star">कृपया हमें थोड़ा सा और बताएं  कि आपने %d स्‍टार क्‍यों चयन किया </string>
+    <string name="tell_us_about_a_bit_more_about_why_your_experience">कृपया हमें थोड़ा सा और अपने अनुभव के बारे में बताएं </string>
+    <!--    <string name="brief_description">Brief Description</string>-->
+    <string name="brief_description">अभियुक्तियाँ/सुधार करने के लिए कोई सुझाव </string>
+    <string name="sending_request_">प्रार्थना भेजी जा रही है। </string>
+    <string name="requested_for_this_location">इस लोकेशन के लिए सफलतापूर्वक प्रार्थना की</string>
+    <string name="already_requested_for_this_location">आप लोकेशन के लिए पहले ही प्रार्थना कर चुके हैं</string>
+    <string name="please_select_stars_for_rating">मूल्‍यांकन हेतु कृपया स्‍टार का चयन करें  </string>
+    <string name="thanks_for_rating">मूल्‍यांकन हेतु धन्‍यवाद </string>
+
+    <!-- Event-->
+    <string name="unable_to_get_location">वर्तमान लोकेशन खोजने में असमर्थ </string>
+    <string name="email_required">कृपया ई-मेल प्रविष्‍ट करें </string>
+    <string name="address_required">कृपया पता प्रविष्‍ट करें </string>
+    <string name="location_required">कृपया लोकेशन लें</string>
+    <string name="details_of_event_coordinator">कार्यक्रम के समन्‍वयकर्त्‍ता का विवरण </string>
+    <string name="name">नाम</string>
+    <string name="contact_no">संपर्क नं. </string>
+    <string name="gps_location">कार्यक्रम की जी पी एस लोकेशन </string>
+    <string name="event_description">कार्यक्रम का विवरण / प्रकार </string>
+    <string name="joining_instructions">जुड़ने के लिए अनुदेश</string>
+    <string name="start_date_time">प्रारंभ तिथि और समय</string>
+    <string name="end_date_time">समाप्ति तिथि और समय</string>
+    <string name="intrested">इच्‍छुक</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="previous">विगत</string>
+    <string name="view_all">सभी देखें</string>
+
+
+    <!--    <string name="exercises">अभ्‍यास</string>-->
+    <string name="exercises">वीडियो</string>
+    <!--    <string name="exercise">व्‍यायाम</string>-->
+    <string name="exercise">वीडियो</string>
+    <string name="event_coordinator_details">कार्यक्रम के समन्‍वयकर्त्‍ता का विवरण </string>
+    <string name="please_wait_">कृपया प्रतीक्षा करें</string>
+    <string name="please_enter_start_date">कृपया प्रारंम्भिक तिथि की प्रविष्‍ट करें  </string>
+    <string name="please_enter_end_date">कृपया समाप्ति तिथि की प्रविष्‍ट करें</string>
+    <string name="please_check_dates">कार्यक्रम शुरू होने की दिनांक समाप्‍त होने की दिनांक से कम होनी चाहिए</string>
+    <string name="event_added_successfully_">आपके कार्यक्रम को मोडरेशन के लिए सफलतापूर्वक जोड़ लिया गया है। </string>
+    <string name="event_updated_successfully_">कार्यक्रम का अद्यतन सफलतापूर्वक पूर्ण हुआ।</string>
+    <string name="read_more">और पढ़े</string>
+    <string name="please_select_rating">कृपया मूल्‍यांकन चयन करें </string>
+    <string name="practices">अनुदेश</string>
+    <string name="overview">अवलोकन</string>
+    <!--    <string name="description">Description</string>-->
+    <string name="key_ingredients">मुख्‍य घटक </string>
+    <string name="direction">लाभ</string>
+    <string name="startPoll">मतदान प्रारंभ करें </string>
+    <string name="choose_poll">प्रारंभ करने के लिए किसी भी मत को चुनें। </string>
+    <string name="already_submitted">आप पहले से ही यह मतदान दे चुके हैं।  कृपया दूसरा मत चुने।</string>
+    <string name="thankyou">धन्‍यवाद</string>
+    <string name="pollsubmittedsuccessfuly">आपका मतदान प्राप्‍त हो चुका है।</string>
+
+
+    <string name="less_details">न्‍यून विवरण</string>
+    <string name="more_details">अधिक विवरण</string>
+    <string name="event_photo">कार्यक्रम फोटो </string>
+    <string name="event_video">कार्यक्रम विडियो </string>
+    <string name="meeting_link">बैठक लिंक </string>
+    <string name="please_select_at_least_one_photo">कृपया कम से कम एक फोटो का चयन करें</string>
+
+    <string name="startQuiz">प्रश्नोत्तरी शुरू करें</string>
+    <string name="choose_quiz">प्रश्नोत्तरी शुरू करने के लिए कोई एक चुनें</string>
+    <string name="already_submitted_quiz">आप इस प्रश्नोत्तरी को पहले ही सबमिट कर चुके हैं। कृपया कोई दूसरा चुनें.</string>
+    <string name="quizsubmittedsuccessfuly">आपकी प्रश्नोत्तरी प्राप्त हो चुकी है।</string>
+    <string name="your_score">आपको अंक </string>
+    <string name="upload_event_s_4_photo_only">कार्यक्रम अपलोड करें/ मात्र चार फ़ोटो अपलोड करें</string>
+    <string name="youtube_video_url">यूट्यूब वीडियो यूआरएलL</string>
+    <string name="to">से</string>
+    <string name="save_token">टोकन सुरक्षित करें</string>
+    <string name="album">एल्बम</string>
+    <string name="image_picker">छवि लेने वाला  र</string>
+    <string name="you_can_select_up_to_images">आप अधिकतम 4 छवियों का चयन कर सकते हैं</string>
+
+    <string name="ops">उफ़!</string>
+    <string name="other_activities">अन्य गतिविधियां</string>
+    <string name="audience_polls">दर्शकों का मत</string>
+    <string name="play_quizzes">प्रश्‍नोत्‍तरी खेलें</string>
+    <string name="social_media_">सामाजिक\nमीडिया</string>
+    <string name="register_">नामांकन</string>
+    <string name="register_2">नामांकन</string>
+    <string name="celebrity_testimonial">सेलिब्रिटी प्रशंसापत्र</string>
+    <string name="please_provide_all_required_details_to_register_as_a_s">कृपया %s के रूप में नामांकन करने के लिए सभी आवश्यक विवरण प्रदान करें।</string>
+    <string name="register_login">नामांकन / लॉगिन</string>
+    <string name="share_app_msg">इसे https://play.google.com/store/apps/details?id=yogatracker.np.com.yogatracker पर प्राप्त करें </string>
+    <string name="share_app_title">आवेदन साझा करेंं</string>
+    <string name="please_check_start_date">कार्यक्रम के प्रारंभ की दिनांक समय वर्तमान दिनांक और समय से अधिक होना चाहिए</string>
+    <string name="resend_otp_msg">ओटीपी को पुन: सफलतापूर्वक भेजें।</string>
+    <string name="meeting_msg">मीटिंग का यूआरएल मान्य नहीं है.</string>
+    <string name="privacy_policy">गोपनीयता नीति</string>
+    <string name="root_msg">ऐप यह पता लगाता है कि आपका डिवाइस रूटेड या जेलब्रोकन है। क्षमा करें, हम इस प्रकार के उपकरणों का समर्थन नहीं करते हैं।</string>
+
+    <!--<string name="view_all">View All</string>
+    <string name="exercises">Exercises</string>
+    <string name="exercise">Exercise</string>-->
+    <string name="bhuvan_app_">Bhuvan\nApp</string>
+    <string name="location">Location</string>
+    <string name="partcpnts">Participants</string>
+    <string name="ctr_name">Country Name</string>
+    <string name="viewall_locations">View All Locations</string>
+    <string name="explore_bhuvan">Explore Bhuvan App</string>
+</resources>

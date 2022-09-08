@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:forceDarkAllowed="false"
+    android:background="@color/bg_grey"
+    tools:context="com.np.namasteyoga.ui.social.SocialLinkActivity">
+    <include layout="@layout/toolbar_black_with_back_white_bg"
+
+        />
+
+    <View
+        android:id="@+id/titleBorder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/grey"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_record_found"
+        android:id="@+id/noRecordFound"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero"
+        android:background="@color/bg_grey"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleBorder"
+        tools:listitem="@layout/social_item_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

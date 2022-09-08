@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/margin5x4"
+   android:paddingEnd="@dimen/margin5x4"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/et_height_40"
+    android:forceDarkAllowed="false"
+    android:paddingBottom="@dimen/margin5x3"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <View
+        android:layout_width="@dimen/one"
+        android:layout_height="@dimen/zero"
+        android:id="@+id/dividerOne"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/divider_color_"
+        app:layout_constraintHorizontal_bias=".33"/>
+    <View
+        android:layout_width="@dimen/one"
+        android:layout_height="@dimen/zero"
+        android:id="@+id/dividerTwo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/divider_color_"
+        app:layout_constraintHorizontal_bias=".67"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/dividerOne"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo_1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_2"
+            app:layout_constraintEnd_toEndOf="@id/dividerTwo"
+            app:layout_constraintStart_toStartOf="@id/dividerOne"
+            app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/dividerTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ayush_grid"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_black_"
+        android:layout_marginTop="@dimen/et_height_30"
+        android:textSize="@dimen/text_sp16"
+        android:gravity="center"
+        android:fontFamily="@font/lato"
+        android:text="@string/get_start_msg"/>
+
+    <include layout="@layout/button_colored_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/et_height_30"
+        android:layout_marginStart="@dimen/margin5x3"
+        android:layout_marginEnd="@dimen/margin5x3"/>
+</LinearLayout>

@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "yogatracker.np.com.yogatracker",
+  "variantName": "nicliveRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "properties": [],
+      "versionCode": 45,
+      "versionName": "2.3",
+      "enabled": true,
+      "outputFile": "app-niclive-release.apk"
+    }
+  ]
+}

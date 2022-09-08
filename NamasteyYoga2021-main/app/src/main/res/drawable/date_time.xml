@@ -1,0 +1,13 @@
+<vector android:height="24dp" android:viewportHeight="20"
+    android:viewportWidth="20" android:width="24dp"
+    xmlns:aapt="http://schemas.android.com/aapt" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:pathData="M2.499,3.125L2.499,0.625a0.625,0.625 0,1 1,1.25 0v2.5a0.625,0.625 0,0 1,-1.25 0ZM13.124,3.75a0.625,0.625 0,0 0,0.625 -0.625L13.749,0.625a0.625,0.625 0,0 0,-1.25 0v2.5A0.625,0.625 0,0 0,13.125 3.75ZM19.999,15a5,5 0,1 1,-5 -5A5,5 0,0 1,19.999 15ZM18.749,15A3.75,3.75 0,1 0,14.999 18.75,3.754 3.754,0 0,0 18.75,15ZM4.999,7.5L2.499,7.5L2.499,10L4.999,10ZM2.499,13.75L4.999,13.75v-2.5L2.499,11.25ZM6.25,10h2.5L8.75,7.5h-2.5ZM6.25,13.75h2.5v-2.5h-2.5ZM1.25,14.876L1.25,6.25L14.999,6.25v2.5h1.25L16.249,3.875A1.364,1.364 0,0 0,14.899 2.5h-0.521v0.625a1.25,1.25 0,1 1,-2.5 0L11.878,2.5h-7.5v0.625a1.25,1.25 0,1 1,-2.5 0L1.878,2.5L1.354,2.5A1.364,1.364 0,0 0,-0.001 3.875v11A1.366,1.366 0,0 0,1.354 16.25h7.4L8.754,15h-7.4A0.118,0.118 0,0 1,1.25 14.876ZM12.499,10L12.499,7.5L9.999,7.5L9.999,10ZM16.874,15L14.999,15L14.999,13.125a0.625,0.625 0,0 0,-1.25 0v2.5a0.625,0.625 0,0 0,0.625 0.625h2.5a0.625,0.625 0,0 0,0 -1.25Z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:endX="9.997803" android:endY="20"
+                android:startX="9.997803" android:startY="-0.012202213" android:type="linear">
+                <item android:color="#FFFB9425" android:offset="0"/>
+                <item android:color="#FFC5E900" android:offset="1"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+</vector>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:forceDarkAllowed="false"
+    android:orientation="vertical"
+    tools:context="com.np.namasteyoga.ui.settings.SettingsActivity">
+
+    <include layout="@layout/toolbar_black_with_back_white_bg" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one"
+        android:background="@color/divider_color" />
+
+    <LinearLayout
+        android:id="@+id/pushNotificationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/pushNotification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:checked="true"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_bell"
+            android:drawablePadding="@dimen/margin5x3"
+            android:focusable="true"
+            android:fontFamily="@font/lato"
+            android:paddingStart="@dimen/margin5x4"
+            android:paddingTop="@dimen/margin5x4"
+            android:paddingEnd="@dimen/margin5x4"
+            android:paddingBottom="@dimen/margin5x4"
+            android:text="@string/push_notification"
+            android:textColor="@color/black_"
+            android:textSize="@dimen/text_sp16" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/changeLanguageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:id="@+id/changeLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_change_language"
+            android:drawableEnd="@drawable/ic_right_arrow"
+            android:drawablePadding="@dimen/margin5x3"
+            android:focusable="true"
+            android:fontFamily="@font/lato"
+            android:paddingStart="@dimen/margin5x4"
+            android:paddingTop="@dimen/margin5x4"
+            android:paddingEnd="@dimen/margin5x4"
+            android:paddingBottom="@dimen/margin5x4"
+            android:text="@string/change_language"
+            android:textColor="@color/black_"
+            android:textSize="@dimen/text_sp16" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/changePasswordLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one"
+            android:background="@color/divider_color" />
+
+
+        <TextView
+            android:id="@+id/changePassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawableEnd="@drawable/ic_right_arrow"
+            android:drawablePadding="@dimen/margin5x3"
+            android:focusable="true"
+            android:fontFamily="@font/lato"
+            android:paddingStart="@dimen/margin5x4"
+            android:paddingTop="@dimen/margin5x4"
+            android:paddingEnd="@dimen/margin5x4"
+            android:paddingBottom="@dimen/margin5x4"
+            android:text="@string/change_password"
+            android:textColor="@color/black_"
+            android:textSize="@dimen/text_sp16" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/logoutLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one"
+            android:background="@color/divider_color" />
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:drawableStart="@drawable/ic_logout"
+            android:drawablePadding="@dimen/margin5x3"
+            android:focusable="true"
+            android:fontFamily="@font/lato"
+            android:paddingStart="@dimen/margin5x4"
+            android:paddingTop="@dimen/margin5x4"
+            android:paddingEnd="@dimen/margin5x4"
+            android:paddingBottom="@dimen/margin5x4"
+            android:text="@string/logout"
+            android:textColor="@color/black_"
+            android:textSize="@dimen/text_sp16" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one"
+        android:background="@color/divider_color" />
+
+</LinearLayout>

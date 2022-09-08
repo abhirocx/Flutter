@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="et_width_300">248dp</dimen>
+    <dimen name="et_width_310">320dp</dimen>
+    <dimen name="et_width_120">120dp</dimen>
+    <dimen name="et_width_200">200dp</dimen>
+    <dimen name="et_height_40">40dp</dimen>
+    <dimen name="et_height_45">45dp</dimen>
+    <dimen name="et_height_8">8dp</dimen>
+    <dimen name="et_height_4">4dp</dimen>
+    <dimen name="et_height_50">40dp</dimen>
+    <dimen name="et_height_60">60dp</dimen>
+    <dimen name="et_height_80">80dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="card_radius">16dp</dimen>
+    <dimen name="margin5x3">15dp</dimen>
+    <dimen name="text_normal">15sp</dimen>
+    <dimen name="margin5x2">10dp</dimen>
+
+    <dimen name="padding3x4">12dp</dimen>
+    <dimen name="margin5x1">5dp</dimen>
+    <dimen name="margin5x5">25dp</dimen>
+    <dimen name="margin5x4">20dp</dimen>
+    <dimen name="et_height_7x2">14dp</dimen>
+    <dimen name="et_width_50">50dp</dimen>
+    <dimen name="dimen10x7">70dp</dimen>
+    <dimen name="dimen10x6">60dp</dimen>
+
+
+    <dimen name="hundraded">100dp</dimen>
+    <dimen name="width_120">120dp</dimen>
+    <dimen name="activity_padding">16dp</dimen>
+    <dimen name="dimen_10">10dp</dimen>
+    <dimen name="logo_width">20dp</dimen>
+    <dimen name="airline_name">16sp</dimen>
+    <dimen name="no_of_stops">14sp</dimen>
+    <dimen name="lbl_price">12sp</dimen>
+    <dimen name="departure">20sp</dimen>
+    <dimen name="price">16sp</dimen>
+    <dimen name="duration">11sp</dimen>
+    <dimen name="divider">1dp</dimen>
+    <dimen name="normal_divider">0.5dp</dimen>
+    <dimen name="yellow_divider">1dp</dimen>
+    <dimen name="login_or_padding">5dp</dimen>
+    <dimen name="tendp">10dp</dimen>
+    <dimen name="padding5x1">5dp</dimen>
+    <dimen name="zero">0dp</dimen>
+    <dimen name="one">1dp</dimen>
+    <dimen name="two">2dp</dimen>
+    <dimen name="default_text_size">16sp</dimen>
+    <dimen name="default_text_size_change">14sp</dimen>
+    <dimen name="medium_text_size">18sp</dimen>
+    <dimen name="padding4x4">16dp</dimen>
+    <dimen name="padding4x2">8dp</dimen>
+    <dimen name="padding4x1">4dp</dimen>
+    <dimen name="item_view">32dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+
+    <dimen name="button_width">300dp</dimen>
+    <dimen name="et_width_150">150dp</dimen>
+    <dimen name="et_width_220">220dp</dimen>
+    <dimen name="et_width_180">180dp</dimen>
+    <dimen name="et_width_250">250dp</dimen>
+    <dimen name="et_height_20">20dp</dimen>
+    <dimen name="et_height_10">10dp</dimen>
+    <dimen name="et_height_30">30dp</dimen>
+    <dimen name="padding_main">16dp</dimen>
+
+
+    <dimen name="text_sp18">18sp</dimen>
+    <dimen name="text_sp16">16sp</dimen>
+    <dimen name="text_sp14">14sp</dimen>
+    <dimen name="text_sp20">20sp</dimen>
+    <dimen name="text_sp24">24sp</dimen>
+    <dimen name="text_sp22">22sp</dimen>
+    <dimen name="text_sp28">28sp</dimen>
+    <dimen name="text_sp35">35sp</dimen>
+    <dimen name="text_sp12">12sp</dimen>
+    <dimen name="hint_sp8">12sp</dimen>
+
+    <dimen name="text_big">24sp</dimen>
+    <dimen name="text_very_big">28sp</dimen>
+    <dimen name="text_medium">20sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="text_very_small">8sp</dimen>
+
+    <dimen name="view_pager_card_radius">10dp</dimen>
+    <dimen name="et_width_130">130dp</dimen>
+
+    <dimen name="padding_bottom_view_pager">85dp</dimen>
+    <dimen name="et_width_400">400dp</dimen>
+    <dimen name="dimen3x1">3dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="appbar_padding">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+    <dimen name="app_corner">45dp</dimen>
+    <dimen name="app_white_drable_padding">40dp</dimen>
+    <dimen name="margin_title_top">30dp</dimen>
+    <dimen name="margin_title_start">25dp</dimen>
+    <dimen name="margin_title_end">25dp</dimen>
+    <dimen name="title_betmeen_margin">8dp</dimen>
+    <dimen name="card_elevation_login_type">24dp</dimen>
+    <dimen name="progress_height">30dp</dimen>
+    <dimen name="padding_data_layout">25dp</dimen>
+    <dimen name="padding_data_bottom">15dp</dimen>
+    <dimen name="margin_title_to_start">25dp</dimen>
+    <dimen name="data_layout_margin">10dp</dimen>
+    <dimen name="data_layout_min_height">80dp</dimen>
+    <dimen name="button_radius">150dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">150dp</dimen>
+    <dimen name="button_padding">40dp</dimen>
+    <dimen name="input_padding">15dp</dimen>
+    <dimen name="input_padding_start">15dp</dimen>
+    <dimen name="width9x5">45dp</dimen>
+    <dimen name="progress_padding">13dp</dimen>
+    <dimen name="edit_hight">55dp</dimen>
+    <dimen name="image_size">115dp</dimen>
+    <dimen name="text_sp50">50sp</dimen>
+    <dimen name="width_110">110dp</dimen>
+    <dimen name="et_height_90">90dp</dimen>
+    <dimen name="et_height_55">55dp</dimen>
+
+    <dimen name="slidetoact_default_area_margin">8dp</dimen>
+    <dimen name="slidetoact_default_icon_margin">16dp</dimen>
+    <dimen name="slidetoact_default_text_size">16sp</dimen>
+    <dimen name="dimen3x2">6dp</dimen>
+
+
+    <dimen name="WheelItemTextSize">24sp</dimen>
+    <dimen name="WheelItemSpace">12dp</dimen>
+    <dimen name="WheelIndicatorSize">2dp</dimen>
+    <dimen name="WheelMargins">8dp</dimen>
+    <dimen name="height_140">140dp</dimen>
+</resources>

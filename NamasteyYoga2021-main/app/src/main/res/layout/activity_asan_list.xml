@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:forceDarkAllowed="false"
+    android:orientation="vertical"
+    tools:context=".ui.asana.catagory.ActivityAsanList">
+
+    <include layout="@layout/toolbar_black_with_back" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/et_width_200"
+        >
+
+        <ImageView
+            android:id="@+id/ivAsana"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_place_holder">
+
+        </ImageView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/asana_bg_gradient">
+            <TextView
+                android:id="@+id/tvOverview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:text="Overview"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="@dimen/dimen_10"/>
+
+            <TextView
+                android:id="@+id/tvVideosCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:text="@string/n_a"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:drawableLeft="@android:drawable/presence_video_online"
+                android:drawablePadding="10dp"
+                android:padding="@dimen/dimen_10"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.skyhope.showmoretextview.ShowMoreTextView
+        android:id="@+id/tvShortDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/n_a"
+        android:maxLines="3"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:padding="@dimen/dimen_10"/>
+
+    <TextView
+        android:id="@+id/tvReadMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/read_more"
+        android:layout_gravity="right"
+        android:maxLines="3"
+        android:visibility="gone"
+        android:textColor="#4e9533"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="-13dp"
+        android:paddingRight="@dimen/dimen_10"
+        android:paddingLeft="@dimen/dimen_10"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one"
+        android:background="@color/divider_color" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAsanaList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:listitem="@layout/asana_item_layout" />
+
+
+</LinearLayout>

@@ -1,0 +1,96 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.np.namasteyoga.ui.eventModule.fragments.PastEventFragment">
+
+    <!--NO EVENTS-->
+    <LinearLayout
+        android:id="@+id/llNoEvents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="24dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/no_events" />
+
+        <TextView
+            android:id="@+id/tvFirstText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/light_black_text"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvMiddleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/eventMiddleText"
+            android:textColor="@color/light_black_text"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tvSecondtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/eventsecondtext"
+            android:textColor="@color/light_black_text"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/rlSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/et_height_40"
+            android:layout_gravity="center"
+            android:layout_marginLeft="64dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="64dp"
+            android:background="@drawable/rounded_corners_orange">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/notify_me"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/event_item_layout"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/progress_circular"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

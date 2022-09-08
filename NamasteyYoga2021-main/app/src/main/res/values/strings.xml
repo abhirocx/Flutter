@@ -1,0 +1,476 @@
+<resources>
+    <string name="app_name">Namaste-Yoga</string>
+
+
+    <string name="use_current_loc">Use my current location</string>
+    <string name="yoga_centers">Yoga Centres</string>
+    <string name="yoga_trainers">Yoga Trainers</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_password_">Forgot Password</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <!--    <string name="forgot_password_text">Enter your email id below and we will send you an OTP to reset your password.</string>-->
+    <string name="email_id">Email Id</string>
+    <string name="submit">Submit</string>
+
+    <string name="register">Register</string>
+
+    <string name="contact_number">Contact Number</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="trainer_as">Trainer As</string>
+    <string name="already_have_account">Already have an account?</string>
+    <string name="center_name">Centre Name</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="rest_passwrd_text">Enter the OTP below and reset your password</string>
+    <string name="enterOTP">OTP</string>
+    <string name="dont_recv_otp">Didn\'t receive the OTP?</string>
+    <string name="resendOTP">Resend OTP</string>
+    <!--    <string name="cnfrm_passwrd">Confirm Password</string>-->
+    <!--    <string name="new_passwrd">New Password</string>-->
+    <!--    <string name="splash_text">Yoga\nLocator</string>-->
+    <!--    <string name="yoga_events">Yoga Events</string>-->
+    <string name="yoga_events">Event List</string>
+    <string name="no_events">Unfortunately there is no EVENTS in your city right now.</string>
+    <string name="no_events_notify">Tap on the notify button if you want to be notified as any yoga event are added in your city.</string>
+    <string name="no_trainers">Unfortunately there is no TRAINERS in your city right now.</string>
+    <string name="no_trainers_notify">Tap on the notify button if you want to be notified as any yoga trainer are added in your city.</string>
+    <string name="no_centers">Unfortunately there is no CENTRES in your city right now.</string>
+    <string name="no_centers_notify">Tap on the notify button if you want to be notified as any yoga centre are added in your city.</string>
+
+
+    <string name="notify_me">NOTIFY ME</string>
+    <string name="enter_detail">Enter your details</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="search_city">Search by city</string>
+    <string name="full_name">Full Name</string>
+    <string name="feedback">Feedback</string>
+    <string name="search_center">search by center name</string>
+    <string name="create_event">Create Event</string>
+    <!--    <string name="create_my_event">CREATE EVENT</string>-->
+    <string name="event_name">Event Name</string>
+    <string name="contact_name">Contact Name</string>
+    <string name="event_start_date_time">Event Start Date</string>
+    <string name="event_end_date_time">Event End Date</string>
+    <string name="free">Free</string>
+    <string name="ishiglight">Highlight</string>
+    <string name="description">Description</string>
+    <string name="description_max">Description Max. 1000 characters</string>
+    <!--    <string name="center_name_required">Name Required</string>-->
+    <!--    <string name="password_required">Password is required</string>-->
+    <!--    <string name="email_required">please enter email</string>-->
+    <string name="contact_required">Please enter contact number</string>
+    <!--    <string name="address_required">please enter address</string>-->
+    <string name="email_is_not_valid">Invalid email</string>
+    <!--    <string name="password_too_short">Password is too short</string>-->
+    <!--    <string name="search_trainer">Search by trainer name</string>-->
+    <!--    <string name="help">Help</string>-->
+    <string name="logout">Logout</string>
+    <string name="cant_be_blank">Cannot be blank</string>
+    <!--    <string name="please_enter_email">Please enter your email</string>-->
+
+    <!--    <string name="title_activity_search_city">ActivitySearchCity</string>-->
+    <string name="select_city">Please select your city</string>
+    <string name="selectCity">Select City</string>
+    <string name="chooseCity">Choose City</string>
+    <string name="type_city">Type city name</string>
+    <string name="it_is_mandatory_to_update_the_app">A newer version of the app is now available. Please update to proceed.</string>
+    <string name="update_required">Update required</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="update">Update</string>
+    <!--    <string name="trainerfirsttext">trainers listed on our platform but there are no trainers listed for your city right now.</string>-->
+    <!--    <string name="centersfirsttext">centres listed on our platform but there are no centres listed for your city right now.</string>-->
+    <!--    <string name="eventfirsttext">events listed on our platform but there are no events listed for your city right now.</string>-->
+    <!--    <string name="trainersecondtext">Tap on the notify button and we’ll notify you as soon as a trainer gets listed in your city.</string>-->
+    <!--    <string name="centresecondtext">Tap on the notify button and we’ll notify you as soon as a centre gets listed in your city.</string>-->
+    <string name="eventsecondtext">Tap on the notify button and we’ll notify you as soon as a event gets listed in your city.</string>
+    <!--    <string name="server_error">Server busy</string>-->
+    <!--    <string name="server_under_load">Oops. It seems our servers are under load right now. Please try again in a short while.</string>-->
+    <!--    <string name="try_again">Try again</string>-->
+    <!--    <string name="centerMiddleText">No centre is seen listed from your city at present.</string>-->
+    <!--    <string name="traineMiddleText">No trainer is seen listed from your city at present.</string>-->
+    <string name="eventMiddleText">No event is seen listed from your city at present.</string>
+    <!--    <string name="myeventMiddleText">You have not created any event so far.\nTap on the create event button to create an event.</string>-->
+    <string name="no_internet">No internet</string>
+    <string name="please_check_internet">Please check your Internet Connection!</string>
+    <string name="ok">Ok</string>
+    <string name="iagree">I AGREE</string>
+
+    <string name="disclaimer">Disclaimer</string>
+    <string name="disclaimer_text">The contents of this app are provided for the information of your app users. It is requested to verify the authenticity of the information independently, wherever felt necessary.</string>
+    <!--    <string name="please_enter_otp">Please enter OTP</string>-->
+    <!--    <string name="please_enter_new_passwrd">Please enter new password</string>-->
+    <!--    <string name="please_re_enter_password">Please re-enter password</string>-->
+    <!--    <string name="password_do_not_match">Password do not match</string>-->
+    <!--    <string name="invalid_otp">Invalid OTP</string>-->
+    <!--    <string name="password_changed_successfully">Password changed successfully</string>-->
+    <string name="_successfully">Successfully</string>
+    <!--    <string name="otp_sent">OTP sent to your email</string>-->
+    <!--    <string name="password_should_six_char">Password shoulde be at lease 6 characters</string>-->
+    <string name="type_center">Type center name</string>
+    <string name="type_trainer">Type trainer name</string>
+    <string name="type_event">Type event name</string>
+    <string name="are_you_sure_you_want_to_add">Are you sure you want to add this event to the calendar?</string>
+    <!--    <string name="are_you_sure_you_want_to_edit">Are you sure you want to edit this event?</string>-->
+    <!--    <string name="side_menu_icon_text">Login to your YogaLocator account for a personalized experience.</string>-->
+
+    <string name="alert">Alert</string>
+    <string name="my_events">My Events</string>
+    <string name="change_password">Change Password</string>
+    <string name="my_accounts">My Account</string>
+    <string name="edit_event">Edit Event</string>
+    <string name="edit_account">Edit Account</string>
+    <string name="save">Save</string>
+    <!--    <string name="change_password_sc">CHANGE\nPASSWORD</string>-->
+    <string name="old_password">Old Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <!--    <string name="enter_new_password">Enter the new password</string>-->
+    <!--    <string name="invalid_phone_number">Invalid phone number</string>-->
+    <string name="please_enter_valid_mobile_number">Please enter valid mobile number</string>
+    <string name="number_strts_with_zero">Can\'t starts with zero</string>
+    <string name="password_should_be_8_15_characters_with_at_least_1_nummeric">Password must contain at least 8–15 characters, including UPPER/LOWERCASE, special symbols and numbers</string>
+    <!--    <string name="enterOTPbelow">Enter the OTP below to verify your email</string>-->
+    <!--    <string name="otp_verification">OTP\nVERIFICATION</string>-->
+    <string name="do_u_like_this_event">Do you like this event?</string>
+    <string name="give_us_rate">Give us a quick rate to know how much you like this event.</string>
+    <!--    <string name="is_this_your">Is this your</string>-->
+    <string name="current_city">Current City</string>
+    <string name="nearest_city">Nearby City</string>
+    <string name="current_city_text">If you are located in a city then select the current city option.</string>
+    <string name="nearest_city_text">If you are *not* located in a city then select the nearest city option.</string>
+    <string name="current_event_city_text">If your event is being held in a city then select the current city option.</string>
+    <string name="nearest_event_city_text">If your event is *not* being held in a city then select the nearby city option.</string>
+    <string name="current_events">Current</string>
+    <string name="upcoming_events">Upcoming</string>
+    <string name="past_events">Past</string>
+    <string name="private_trainer">Private Trainer</string>
+    <string name="public_trainer">Public Trainer</string>
+    <string name="govt_trainer">Government Trainer</string>
+    <string name="select_type">Select Type</string>
+    <!--    <string name="which_type_of_trainer_you_are">Which type of trainer you are?</string>-->
+    <!--    <string name="which_type_of_trainer_you_are">Are you a:</string>-->
+    <string name="after_otp">Your registration details have been sent to the administrator for approval. Once approved, your listing will be visible on the Namaste Yoga app.</string>
+
+    <string name="trainer">Trainer</string>
+    <string name="trainer_name">Trainer Name</string>
+    <string name="s_name">%s Name</string>
+    <string name="centre">Centre</string>
+    <string name="full">Full</string>
+    <string name="centre_name">Centre Name</string>
+    <string name="guest">Guest</string>
+    <string name="guest_name">Full Name</string>
+    <!--    <string name="are_you_a">Are you a</string>-->
+    <string name="_private">Private</string>
+    <string name="private_">Private</string>
+    <string name="public_">Public</string>
+    <string name="_public">Public</string>
+    <string name="_govt">Govt</string>
+    <string name="certificate_number">Certificate Number</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="sitting_capacity">Seating Capacity</string>
+    <string name="please_enter_ycb_certificate_number">Please enter YCB certificate number</string>
+    <string name="password_should_be_3_15_characters_with_at_least_1_nummeric">Certificate must contain at least 3–15 characters, including charaters and numbers</string>
+    <string name="suspend_account">Suspend Account</string>
+    <!--    <string name="terms_and_conditions_text">terms &amp; use.</string>-->
+    <string name="terms_and_conditions_text">terms of use.</string>
+    <string name="terms_and_conditions">Terms and Use</string>
+    <string name="terms_and_conditions_msg">Please agree to the terms &amp; use</string>
+    <string name="yes_i_agree_to_the">Yes, I agree to the</string>
+
+
+    <string name="onBackPressed">onBackPressed</string>
+    <string name="onCreate">onCreate</string>
+    <string name="loading">Loading…</string>
+    <string name="default_notification_channel_id">push_notification_namaste_yoga</string>
+    <string name="connection_is_required">Connection is required. Check your internet connection and try again</string>
+    <string name="no_internet_connection">No Internet connection</string>
+    <string name="something_went_wrong">Something went wrong,Try again!</string>
+    <string name="cancel">Cancel</string>
+    <string name="title">Title</string>
+    <string name="permission_msg">Please allow storage permission in App Settings for additional functionality.</string>
+    <string name="permission_title">Permission Alert</string>
+    <string name="fitness_activity">Fitness Activity</string>
+    <string name="background">Background</string>
+    <string name="steps">Steps</string>
+    <string name="history">History</string>
+    <string name="last_7_days_activities">Last 7 days activities</string>
+    <string name="calories">Calories</string>
+    <string name="_0">0</string>
+    <string name="_0_cal">0 Cal</string>
+    <string name="_d_cal">%d Cal</string>
+    <string name="_0_km">0 Km</string>
+    <string name="_s_km">%s Km</string>
+    <string name="goal_setting">Goal Settings</string>
+    <string name="graph_date_format" translatable="false">d MMM</string>
+    <string name="history_title_date_format" translatable="false">MMMM, yyyy</string>
+    <string name="history_item_date_format" translatable="false">dd MMM, yyyy</string>
+    <string name="_0_steps">0 Steps</string>
+    <string name="_d_steps">%d Steps</string>
+
+
+    <!--    Steps-->
+    <string name="action_settings">Settings</string>
+    <string name="permission_rationale">Location data is used as part of the Google Fit API</string>
+
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="settings">Settings</string>
+    <string name="read_step_data">Read Step Data</string>
+    <string name="n_a">N/A</string>
+    <string name="empty" />
+    <string name="trophy">Trophy</string>
+    <string name="km">Km</string>
+    <string name="no_record_found">No record found !</string>
+
+
+    <string name="default_permission_msg_camera">The app requires some mandatory permissions. Please allow all the
+        required permissions to enable smooth running of the app.
+    </string>
+    <string name="default_permission_msg_location">You need to grant access to Location Permission.</string>
+    <string name="title_permission">Necessary Permission</string>
+    <string name="permission_rationale_splash">Location data is used as part of the Current location.</string>
+
+
+    <!--    OnBoard Data-->
+    <string name="on_board_first_title">Find Yoga Trainers, Centres and events</string>
+    <string name="on_board_sec_title">Yoga Aasanas</string>
+    <!--    <string name="on_board_third_title">AAYUSH MERCHANDISE</string>-->
+    <string name="on_board_third_title">Ayush Merchandise</string>
+    <string name="on_board_four_title">Track fitness activities</string>
+    <string name="on_board_first_msg">You can get details of yoga centres, yoga trainers and upcoming, current and past events details and will able to share to others.</string>
+    <string name="on_board_sec_msg">A wide variety of yoga videos made for you. No matter what type of yoga you practise, you can find something suitable on Daily Yoga.</string>
+    <string name="on_board_third_msg">Traditional &amp; Non-Conventional Systems of Health Care and Healing Which Include Ayurveda, Yoga, Naturopathy, Unani, Siddha, Sowa-Rigpa and Homoeopathy etc.</string>
+    <string name="on_board_four_msg">You can track your walks, runs, calories, and more on the app. Check how many steps you done and see how much calories you burned.</string>
+
+    <string name="finish">Finish</string>
+    <string name="next">Next</string>
+    <string name="today_target_s">Your current goal is %s</string>
+    <string name="skip">Skip</string>
+    <string name="app_gradient_background">App Gradient Background</string>
+    <!--    <string name="please_provide_all_required_details_to_register_as_a_trainer">Please provide all required details to register as a trainer.</string>-->
+    <string name="drawable">Drawable</string>
+    <string name="choose_trainer_as">Choose Trainer As</string>
+    <string name="government">Government</string>
+    <string name="login_here">Login here</string>
+    <string name="back">Back</string>
+    <string name="select_location">Select Location</string>
+    <string name="location_permission">Please allow Location permission in App Settings for additional functionality.</string>
+    <string name="no_more_data_available">No more data available!</string>
+    <string name="enter_your_email_id_below_and_we_will_send_you_an_otp_to_reset_your_password">Enter your email id below and we will send you an OTP to reset your password.</string>
+    <string name="please_enter_username_and_password_to_login">Please enter username and password to login.</string>
+    <!--    <string name="register_here">Register here</string>-->
+    <string name="register_here">Enroll here</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="you_re_almost_done_complete_registration_by_verifying_your_mobile_no_and_email_id">You\'re almost done. Complete registration by verifying your mobile number and email id.</string>
+    <string name="enter_otp_code_sent_to_your_registered_mobile_no_and_email_id">Enter OTP code sent to your registered mobile number and email id.</string>
+    <string name="please_enter_your_old_and_new_password_below">Please enter your old and new password below.</string>
+
+
+    <string name="please_provide">Please provide %s</string>
+    <string name="not_match">%s and %s not match.</string>
+    <string name="valid_msg">Please provide valid %s</string>
+    <string name="sitting_capacity_validation_msg">Please enter Sitting capacity between 10 to 10000.</string>
+    <string name="length_validation">Please enter %s between 3 to 255.</string>
+    <string name="pwd_validation_msg">Please use combination of numbers, uppercase, lowercase and special characters
+        with length 8 – 15.
+    </string>
+
+    <string name="pwd_hint_msg">Password should be use combination of numbers, uppercase, lowercase and special
+        characters
+        with length 8 – 15.
+    </string>
+
+    <string name="fill_field">Please enter %s</string>
+    <string name="get_location">Get Location</string>
+    <string name="select_city_">Select City</string>
+    <string name="name_count">%s (%d)</string>
+    <string name="user">User</string>
+    <!--    <string name="s_km_away">%s km away</string>-->
+    <string name="s_km_away">%s km away from</string>
+    <!--    <string name="register_login">Register / Login</string>-->
+
+    <string name="trainer_details">Trainer Details</string>
+    <string name="center_details">Center Details</string>
+    <string name="share">Share</string>
+    <string name="navigation">Navigation</string>
+    <string name="yoga_asana">Yoga Video(s)</string>
+    <string name="push_notification">Push Notification</string>
+    <string name="title_activity_dashboard">DashboardActivity</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+
+    //////////////////////////////////////////////////////////////////////////////////////
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="ayush_merchandise">Ayush Merchandise</string>
+    <string name="health_fitness_activity">Health / Fitness Activity</string>
+    <string name="quiz">Quiz</string>
+    <string name="poll">Poll</string>
+    <string name="bhuvan_app">Bhuvan App</string>
+    <string name="social_media">Social Media</string>
+    <string name="change_language">Change Language</string>
+    <string name="back_press_msg">If you wont exit app back press one more time</string>
+    <string name="on_gps">Please enable GPS</string>
+    <string name="select_city_p">Please select city</string>
+    <string name="logout_msg">Are you sure, Do you want to logout?</string>
+    <string name="english" translatable="true">English</string>
+    <string name="hindi" translatable="true">Hindi</string>
+    <string name="working_on_that">Working on that!</string>
+    <string name="alredy_selected">Already Selected!</string>
+    <string name="get_start">Get Started</string>
+    <string name="get_start_msg"><![CDATA[Namaste Yoga is a worldwide informative platform for public interest in making Yoga an integral part of peoples’ life and being benefited by practicing Yoga regularly. The Ministry of Ayush has developed the platform and facilitated stakeholders (Public, Yoga institutes, Yoga trainers etc.) for practicing & promoting Yoga and its benefits.]]></string>
+    <string name="welcome">Welcome</string>
+
+    <string name="yoga_trainer">Yoga Trainer</string>
+    <string name="yoga_center">Yoga Centre</string>
+    <string name="yoga_trainer_">Yoga\nTrainers</string>
+    <string name="yoga_center_">Yoga\nCentres</string>
+    <string name="yoga_events_">Yoga\nEvents</string>
+    <string name="health_fitness_">Health\nFitness</string>
+    <string name="guest_user">Guest User</string>
+    <string name="suspend_account_msg">Your account is currently suspended. Tap Yes if you want to activate your account again.</string>
+    <string name="suspend_account_confirmation_msg">Are you sure, Do you want to suspend the account?</string>
+    <string name="resume_account_message">Verification Email Sent Successfully!</string>
+    <string name="other_links">Other Links</string>
+    <string name="linkinden">Linkinden</string>
+    <string name="twitter">Twitter</string>
+    <string name="facebook">Facebook</string>
+    <string name="hh_mm_a_dd_mmm_yyyy" translatable="false">hh:mm a, dd MMM, yyyy</string>
+    <string name="share_trainer_data">Trainer Name: %s\nMobile number: %s\nEmail Id: %s\nAddress: %s</string>
+    <string name="share_event_data">Event Name: %s\nContact no: %s\nEmail Id: %s\nAddress: %s</string>
+
+
+    <string name="share_center_data">Center Name: %s\nMobile number: %s\nEmail Id: %s\nAddress: %s</string>
+    <string name="getting_events">Getting Events…</string>
+    <string name="listing_no">Number of event(s) listed: </string>
+    <string name="select_rating">Please select stars for rating</string>
+    <string name="tranks_foe_rating">Thanks for rating</string>
+    <string name="feedback_validation_msg">Please answer all of the questions.</string>
+    <string name="question_d">Question %d</string>
+    <string name="overall_feedback">Overall Feedback</string>
+    <string name="start_rating">Start Rating</string>
+    <string name="tell_us_about_a_bit_more_about_why_you_choose_4_star">Tell us about a bit more about why you choose %d star?</string>
+    <string name="tell_us_about_a_bit_more_about_why_your_experience">Tell us a bit more about your experience.</string>
+    <!--    <string name="brief_description">Brief Description</string>-->
+    <string name="brief_description">Remarks/ Any suggestions for improvement</string>
+    <string name="sending_request_">Sending request...</string>
+    <string name="requested_for_this_location">Successfully requested for this location</string>
+    <string name="already_requested_for_this_location">You have already requested for this location</string>
+    <string name="please_select_stars_for_rating">Please select stars for rating</string>
+    <string name="thanks_for_rating">Thanks for rating</string>
+
+    <!-- Event-->
+    <string name="unable_to_get_location">Unable to fetch current location</string>
+    <string name="email_required">please enter email</string>
+    <string name="address_required">please enter address</string>
+    <string name="location_required">please get location</string>
+    <string name="details_of_event_coordinator">Details of Event Coordinator</string>
+    <string name="name">Name</string>
+    <string name="contact_no">Contact No</string>
+    <string name="gps_location">GPS Location of Event</string>
+    <string name="event_description">Event Description</string>
+    <string name="joining_instructions">Joining Instructions</string>
+    <string name="start_date_time">Start Date &amp; Time</string>
+    <string name="end_date_time">End Date &amp; Time</string>
+    <string name="intrested">Interested</string>
+    <string name="title_activity_asana_sub_category" translatable="false">AsanaSubCategoryActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="previous">Previous</string>
+    <string name="view_all">View All</string>
+
+
+    <!--    <string name="exercises">Exercises</string>-->
+    <string name="exercises">Videos</string>
+    <!--    <string name="exercise">Exercise</string>-->
+    <string name="exercise">Video</string>
+    <string name="event_coordinator_details">Event Coordinator Details</string>
+    <string name="please_wait_">Please wait...</string>
+    <string name="please_enter_start_date">Please enter start date</string>
+    <string name="please_enter_end_date">Please enter end date</string>
+
+    <string name="please_check_dates">Event start date should be less than end date</string>
+    <string name="event_added_successfully_">Your event has been added successfully for moderation.</string>
+    <string name="event_updated_successfully_">Event updated successfully!</string>
+    <string name="read_more">Read More</string>
+    <string name="please_select_rating">Please select rating.</string>
+    <string name="practices">Instruction</string>
+    <string name="overview">Overview</string>
+    <!--    <string name="description">Description</string>-->
+    <string name="key_ingredients">Key Ingredients</string>
+    <string name="direction">Benefits</string>
+    <string name="startPoll">Start Poll</string>
+    <string name="choose_poll">Choose anyone poll to start</string>
+    <string name="already_submitted">You have already submitted this poll. Please choose other one.</string>
+    <string name="thankyou">Thank You!</string>
+    <string name="pollsubmittedsuccessfuly">Your poll submission has been received.</string>
+
+
+    <string name="less_details">Less Details</string>
+    <string name="more_details">More Details</string>
+    <string name="event_photo">Event Photo</string>
+    <string name="event_video">Event Video</string>
+    <string name="meeting_link">Meeting Link</string>
+    <string name="please_select_at_least_one_photo">Please select at-least one photo.</string>
+
+    <string name="startQuiz">Start Quiz</string>
+    <string name="choose_quiz">Choose anyone quiz to start</string>
+    <string name="already_submitted_quiz">You have already submitted this quiz. Please choose other one.</string>
+    <string name="quizsubmittedsuccessfuly">Your quiz submission has been received.</string>
+    <string name="your_score">YOUR SCORE</string>
+    <string name="upload_event_s_4_photo_only">Upload Event\'s 4 Photo Only</string>
+    <string name="youtube_video_url">YouTube Video URL</string>
+    <string name="to">to</string>
+    <string name="save_token">Save Token</string>
+    <string name="album">Album</string>
+    <string name="image_picker">Image Picker</string>
+    <string name="you_can_select_up_to_images">You can select up to 4 images</string>
+
+    <string name="image_type" translatable="false">image/*</string>
+    <string name="text_type" translatable="false">text/plain</string>
+    <string name="ops">Ops!</string>
+    <string name="other_activities">Other Activities</string>
+    <string name="audience_polls">Audience Polls</string>
+    <string name="play_quizzes">Play Quizzes</string>
+    <string name="social_media_">Social\nMedia</string>
+
+
+
+    <string name="register_">Enrollment</string>
+    <string name="register_2">Enroll</string>
+    <string name="celebrity_testimonial">Celebrity Testimonial</string>
+    <string name="please_provide_all_required_details_to_register_as_a_s">Please provide all required details to enroll as a %s.</string>
+    <string name="register_login">Enroll / Login</string>
+    <string name="share_app_msg">Get it at https://play.google.com/store/apps/details?id=yogatracker.np.com.yogatracker</string>
+    <string name="share_app_title">Share Application</string>
+    <string name="please_check_start_date">Event start date time should be greater than current date and time</string>
+    <string name="resend_otp_msg">Resend OTP successfully.</string>
+    <string name="meeting_msg">Meeting Url not valid.</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="root_msg">The app detect that your device is Rooted or Jailbroken. Sorry , we don\'t support such types of devices.</string>
+    <string name="title_activity_bhuvan">BhuvanActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!--<string name="view_all">View All</string>
+    <string name="exercises">Exercises</string>
+    <string name="exercise">Exercise</string>-->
+
+
+    <string name="bhuvan_app_">Bhuvan\nApp</string>
+    <string name="location">Location</string>
+    <string name="partcpnts">Participants</string>
+    <string name="ctr_name">Country Name</string>
+    <string name="viewall_locations">View All Locations</string>
+    <string name="explore_bhuvan">Explore Bhuvan App</string>
+
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="WheelArrayWeek">
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+        <item>6000</item>
+        <item>7000</item>
+        <item>8000</item>
+        <item>9000</item>
+    </string-array>
+
+    <string-array name="OnPagerBoardTitles">
+        <item>@string/on_board_first_title</item>
+        <item>@string/on_board_sec_title</item>
+        <item>@string/on_board_third_title</item>
+        <item>@string/on_board_four_title</item>
+    </string-array>
+    <string-array name="OnPagerBoardMsgs">
+        <item>@string/on_board_first_msg</item>
+        <item>@string/on_board_sec_msg</item>
+        <item>@string/on_board_third_msg</item>
+        <item>@string/on_board_four_msg</item>
+    </string-array>
+
+    <integer-array name="OnPagerBoardImgs">
+        <item>@drawable/art1</item>
+        <item>@drawable/art2</item>
+        <item>@drawable/art3</item>
+        <item>@drawable/art4</item>
+    </integer-array>
+
+    <string-array name="userTypes">
+        <item>@string/trainer</item>
+        <item>@string/centre</item>
+        <item>@string/guest</item>
+    </string-array>
+</resources>

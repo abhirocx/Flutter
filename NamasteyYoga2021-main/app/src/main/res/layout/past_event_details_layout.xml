@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one"
+        app:layout_constraintBottom_toBottomOf="@id/navigation"
+        app:layout_constraintTop_toTopOf="@id/navigation" />
+
+    <!--android:paddingBottom="@dimen/et_height_30"-->
+    <LinearLayout
+        android:id="@+id/bodyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_drawable"
+        android:orientation="vertical"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/divider"
+        app:layout_constraintVertical_bias=".01">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/eventType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin5x4"
+            android:layout_marginEnd="@dimen/margin5x4"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:orientation="horizontal"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvEventType"
+                android:id="@+id/tvEventName"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:gravity="start|center"
+                android:layout_marginStart="@dimen/margin5x3"
+                android:fontFamily="@font/lato_black"
+                android:paddingStart="@dimen/margin5x1"
+                android:paddingTop="@dimen/padding4x2"
+                android:paddingEnd="@dimen/margin5x1"
+                android:paddingBottom="@dimen/padding4x2"
+                android:text="@string/event_name"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_sp16" />
+
+
+            <TextView
+                android:id="@+id/tvEventType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_color_border_drawable"
+                android:clickable="false"
+                android:enabled="false"
+                android:focusable="false"
+                android:fontFamily="@font/lato"
+                android:paddingStart="@dimen/margin5x2"
+                android:paddingTop="@dimen/dimen3x1"
+                android:paddingEnd="@dimen/margin5x2"
+                android:paddingBottom="@dimen/dimen3x1"
+                android:text="@string/free"
+                android:textColor="@color/text_goal_black_"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvEventName"
+                app:layout_constraintBottom_toBottomOf="@id/tvEventName"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin5x4"
+            android:layout_marginTop="@dimen/margin5x1"
+            android:layout_marginEnd="@dimen/margin5x4"
+            android:clickable="false"
+            android:drawableStart="@drawable/ic_event_loc"
+            android:drawablePadding="@dimen/margin5x3"
+            android:fontFamily="@font/lato"
+            android:text="@string/n_a"
+            android:textSize="@dimen/text_sp14" />
+
+        <TextView
+            android:id="@+id/tvCalender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin5x4"
+            android:layout_marginTop="@dimen/margin5x2"
+            android:layout_marginEnd="@dimen/margin5x4"
+            android:clickable="false"
+            android:drawableStart="@drawable/ic_event_cal"
+            android:drawablePadding="@dimen/margin5x3"
+            android:fontFamily="@font/lato"
+            android:text="@string/n_a"
+            android:textSize="@dimen/text_sp14" />
+
+        <TextView
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin5x4"
+            android:layout_marginTop="@dimen/margin5x2"
+            android:layout_marginEnd="@dimen/margin5x4"
+            android:clickable="false"
+            android:drawableStart="@drawable/ic_address_"
+            android:drawablePadding="@dimen/padding4x4"
+            android:fontFamily="@font/lato"
+            android:paddingStart="@dimen/dimen3x1"
+            android:text="@string/n_a"
+            android:textSize="@dimen/text_sp14" />
+
+        <LinearLayout
+            android:id="@+id/eventDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one"
+                android:layout_marginTop="@dimen/et_height_10"
+                android:layout_marginBottom="@dimen/et_height_10"
+                android:background="@color/divider_color"
+                app:layout_constraintTop_toBottomOf="@id/body" />
+
+            <LinearLayout
+                android:id="@+id/eventSittingCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin5x4"
+                    android:layout_marginTop="@dimen/margin5x1"
+                    android:layout_marginEnd="@dimen/margin5x4"
+                    android:clickable="false"
+                    android:drawablePadding="@dimen/margin5x3"
+                    android:fontFamily="@font/lato_bold"
+                    android:text="@string/sitting_capacity"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_sp14" />
+
+                <TextView
+                    android:id="@+id/tvSittingCapacity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/margin5x4"
+                    android:layout_marginEnd="@dimen/margin5x4"
+                    android:clickable="false"
+                    android:drawablePadding="@dimen/margin5x3"
+                    android:fontFamily="@font/lato"
+                    android:text="@string/n_a"
+                    android:textSize="@dimen/text_sp14" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin5x4"
+                android:layout_marginTop="@dimen/margin5x2"
+                android:layout_marginEnd="@dimen/margin5x4"
+                android:clickable="false"
+                android:drawablePadding="@dimen/margin5x3"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/description"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_sp14" />
+
+            <TextView
+                android:id="@+id/tvDiscription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin5x4"
+                android:layout_marginEnd="@dimen/margin5x4"
+                android:clickable="false"
+                android:drawablePadding="@dimen/margin5x3"
+                android:fontFamily="@font/lato"
+                android:text="@string/n_a"
+                android:textSize="@dimen/text_sp14" />
+
+            <TextView
+                android:id="@+id/lessDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin5x4"
+                android:layout_marginTop="@dimen/margin5x2"
+                android:layout_marginEnd="@dimen/margin5x4"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/less_details"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_sp14" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/moreDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin5x4"
+            android:layout_marginTop="@dimen/margin5x2"
+            android:layout_marginEnd="@dimen/margin5x4"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/more_details"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_sp14" />
+        <!---->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one"
+            android:layout_marginTop="@dimen/et_height_10"
+            android:layout_marginBottom="@dimen/et_height_10"
+            android:background="@color/divider_color"
+            app:layout_constraintTop_toBottomOf="@id/body" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/videoLayout"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin5x4"
+                android:layout_marginTop="@dimen/margin5x4"
+                android:layout_marginEnd="@dimen/margin5x4"
+                android:clickable="false"
+                android:drawablePadding="@dimen/margin5x3"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/event_video"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_sp14" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin5x4"
+                android:layout_marginTop="@dimen/margin5x2"
+                android:layout_marginEnd="@dimen/margin5x4">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/youtubeImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/zero"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_place_holder"
+                    app:layout_constraintDimensionRatio="16:7"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/youtubeClick"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/event_video"
+                    android:padding="@dimen/et_height_60"
+                    android:src="@drawable/ic_youtube_icon"
+                    app:layout_constraintBottom_toBottomOf="@id/youtubeImage"
+                    app:layout_constraintEnd_toEndOf="@id/youtubeImage"
+                    app:layout_constraintStart_toStartOf="@id/youtubeImage"
+                    app:layout_constraintTop_toTopOf="@id/youtubeImage" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin5x4"
+            android:id="@+id/photoLayout"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin5x4"
+                android:layout_marginTop="@dimen/margin5x1"
+                android:layout_marginEnd="@dimen/margin5x4"
+                android:clickable="false"
+                android:drawablePadding="@dimen/margin5x3"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/event_photo"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_sp14" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewLoadImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5x2"
+                tools:itemCount="1"
+                tools:listitem="@layout/past_event_images_item_layout" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/eventCoordinator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin5x4"
+                android:layout_marginTop="@dimen/margin5x2"
+                android:layout_marginEnd="@dimen/margin5x4"
+                android:clickable="false"
+                android:drawablePadding="@dimen/margin5x3"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/event_coordinator_details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_sp14" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin5x4"
+                android:layout_marginTop="@dimen/margin5x1"
+                android:layout_marginEnd="@dimen/margin5x4"
+                android:clickable="false"
+                android:drawableStart="@drawable/ic_user"
+                android:drawablePadding="@dimen/margin5x3"
+                android:fontFamily="@font/lato"
+                android:text="@string/n_a"
+                android:textSize="@dimen/text_sp14" />
+
+            <TextView
+                android:id="@+id/tvPhonenum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin5x4"
+                android:layout_marginTop="@dimen/margin5x1"
+                android:layout_marginEnd="@dimen/margin5x4"
+                android:clickable="false"
+                android:drawableStart="@drawable/ic_phone"
+                android:drawablePadding="@dimen/margin5x3"
+                android:fontFamily="@font/lato"
+                android:text="@string/n_a"
+                android:textSize="@dimen/text_sp14" />
+
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin5x4"
+                android:layout_marginTop="@dimen/margin5x1"
+                android:layout_marginEnd="@dimen/margin5x4"
+                android:clickable="false"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="@dimen/margin5x3"
+                android:fontFamily="@font/lato"
+                android:text="@string/n_a"
+                android:textSize="@dimen/text_sp14" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/margin5x2"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/app_gradiant_background"
+            android:clickable="false"
+            android:focusable="false"
+            android:visibility="gone"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/lato"
+            android:gravity="center"
+            android:padding="@dimen/margin5x3"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_sp18" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/et_height_30"
+        android:contentDescription="@string/navigation"
+        android:src="@drawable/ic_location_track"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin5x2"
+        android:contentDescription="@string/share"
+        android:src="@drawable/ic_share_"
+        app:layout_constraintEnd_toStartOf="@id/navigation"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:forceDarkAllowed="false"
+    tools:context="com.np.namasteyoga.ui.feedback.feedbackRating.FeedbackRatingActivity">
+    <include layout="@layout/toolbar_black_with_back"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one"
+        android:id="@+id/divider"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/light_gray_"/>
+
+    <TextView
+        android:layout_width="@dimen/zero"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/margin5x4"
+        android:layout_marginEnd="@dimen/margin5x4"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:textColor="@color/text_black_"
+        android:fontFamily="@font/lato_black"
+        android:textSize="@dimen/text_sp16"
+        app:layout_constraintTop_toBottomOf="@id/divider"
+        android:layout_marginTop="@dimen/margin5x2"
+        android:text="@string/start_rating"/>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin5x3"
+        android:layout_marginEnd="@dimen/margin5x3"
+        android:layout_marginTop="@dimen/margin5x4"
+        android:numStars="5"
+        android:stepSize="1"
+        android:id="@+id/ratingView"
+        android:progressTint="@color/orange"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        app:layout_constraintTop_toBottomOf="@id/title"/>
+
+    <TextView
+        android:layout_width="@dimen/zero"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleDes"
+        android:visibility="visible"
+        android:textColor="@color/text_black_"
+        android:fontFamily="@font/lato_bold"
+        android:textSize="@dimen/text_sp16"
+        app:layout_constraintTop_toBottomOf="@id/ratingView"
+        android:layout_marginTop="@dimen/margin5x5"
+        android:text="@string/tell_us_about_a_bit_more_about_why_you_choose_4_star"/>
+
+    <EditText
+        android:layout_width="@dimen/zero"
+        android:layout_height="@dimen/hundraded"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        android:background="@color/white"
+        android:id="@+id/description"
+        android:gravity="top"
+        android:visibility="visible"
+        android:inputType="text"
+        android:maxLength="200"
+        android:textSize="@dimen/text_sp16"
+        android:layout_marginTop="@dimen/margin5x1"
+        app:layout_constraintTop_toBottomOf="@id/titleDes"
+        android:hint="@string/brief_description"/>
+
+    <View
+        android:layout_width="@dimen/zero"
+        android:layout_height="@dimen/one"
+        android:id="@+id/dividerBottom"
+        app:layout_constraintStart_toStartOf="@id/title"
+        app:layout_constraintEnd_toEndOf="@id/title"
+        android:layout_marginTop="@dimen/margin5x1"
+        app:layout_constraintTop_toBottomOf="@id/description"
+        android:background="@color/light_gray_"/>
+
+    <include
+        layout="@layout/button_colored_layout_without_round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

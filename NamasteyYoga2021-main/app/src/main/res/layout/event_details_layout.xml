@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one"
+        app:layout_constraintBottom_toBottomOf="@id/navigation"
+        app:layout_constraintTop_toTopOf="@id/navigation" />
+
+<!--android:paddingBottom="@dimen/et_height_30"-->
+    <LinearLayout
+        android:id="@+id/bodyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/white_drawable"
+        android:orientation="vertical"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/divider"
+        app:layout_constraintVertical_bias=".01">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/eventType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin5x4"
+            android:layout_marginEnd="@dimen/margin5x4"
+            android:orientation="horizontal"
+            android:clickable="false"
+            android:gravity="center"
+            android:focusable="false"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <Button
+
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/tvEventType"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="@dimen/zero"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="@dimen/margin5x3"
+                android:fontFamily="@font/lato_black"
+                android:id="@+id/tvEventName"
+                android:paddingStart="@dimen/margin5x1"
+                android:paddingTop="@dimen/padding4x2"
+                android:paddingEnd="@dimen/margin5x1"
+                android:gravity="center_vertical"
+                android:paddingBottom="@dimen/padding4x2"
+                android:text="@string/n_a"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_sp16" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/text_color_border_drawable"
+                android:clickable="false"
+                android:enabled="false"
+                android:focusable="false"
+                android:fontFamily="@font/lato"
+                android:paddingStart="@dimen/margin5x2"
+                android:paddingTop="@dimen/dimen3x1"
+                android:paddingEnd="@dimen/margin5x2"
+                android:paddingBottom="@dimen/dimen3x1"
+                android:text="@string/free"
+                android:id="@+id/tvEventType"
+                android:textColor="@color/text_goal_black_"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/tvEventName"
+                app:layout_constraintBottom_toBottomOf="@id/tvEventName"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+        <TextView
+            android:id="@+id/tvDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin5x4"
+            android:layout_marginTop="@dimen/margin5x1"
+            android:layout_marginEnd="@dimen/margin5x4"
+            android:clickable="false"
+            android:drawableStart="@drawable/ic_event_loc"
+            android:drawablePadding="@dimen/margin5x3"
+            android:fontFamily="@font/lato"
+            android:text="@string/n_a"
+            android:textSize="@dimen/text_sp14" />
+
+        <TextView
+            android:id="@+id/tvCalender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin5x4"
+            android:layout_marginTop="@dimen/margin5x2"
+            android:layout_marginEnd="@dimen/margin5x4"
+            android:clickable="false"
+            android:drawableStart="@drawable/ic_event_cal"
+            android:drawablePadding="@dimen/margin5x3"
+            android:fontFamily="@font/lato"
+            android:text="@string/n_a"
+            android:textSize="@dimen/text_sp14" />
+
+        <TextView
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin5x4"
+            android:layout_marginTop="@dimen/margin5x2"
+            android:layout_marginEnd="@dimen/margin5x4"
+            android:clickable="false"
+            android:drawableStart="@drawable/ic_address_"
+            android:drawablePadding="@dimen/margin5x3"
+            android:fontFamily="@font/lato"
+            android:text="@string/n_a"
+            android:textSize="@dimen/text_sp14" />
+        <View
+            android:layout_marginTop="@dimen/et_height_10"
+            android:layout_marginBottom="@dimen/et_height_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one"
+            android:background="@color/divider_color"
+            app:layout_constraintTop_toBottomOf="@id/body" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin5x4"
+            android:layout_marginTop="@dimen/margin5x1"
+            android:layout_marginEnd="@dimen/margin5x4"
+            android:clickable="false"
+            android:drawablePadding="@dimen/margin5x3"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/sitting_capacity"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_sp14" />
+        <TextView
+            android:id="@+id/tvSittingCapacity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin5x4"
+            android:layout_marginEnd="@dimen/margin5x4"
+            android:clickable="false"
+            android:drawablePadding="@dimen/margin5x3"
+            android:fontFamily="@font/lato"
+            android:text="@string/n_a"
+            android:textSize="@dimen/text_sp14" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin5x4"
+            android:layout_marginTop="@dimen/margin5x2"
+            android:layout_marginEnd="@dimen/margin5x4"
+            android:clickable="false"
+            android:drawablePadding="@dimen/margin5x3"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/description"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_sp14" />
+        <TextView
+            android:id="@+id/tvDiscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin5x4"
+            android:layout_marginEnd="@dimen/margin5x4"
+            android:clickable="false"
+            android:drawablePadding="@dimen/margin5x3"
+            android:fontFamily="@font/lato"
+            android:text="@string/n_a"
+            android:textSize="@dimen/text_sp14" />
+
+        <!---->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin5x4"
+            android:layout_marginTop="@dimen/margin5x2"
+            android:layout_marginEnd="@dimen/margin5x4"
+            android:clickable="false"
+            android:drawablePadding="@dimen/margin5x3"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/event_coordinator_details"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_sp14" />
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin5x4"
+            android:layout_marginTop="@dimen/margin5x1"
+            android:layout_marginEnd="@dimen/margin5x4"
+            android:clickable="false"
+            android:drawableStart="@drawable/ic_user"
+            android:drawablePadding="@dimen/margin5x3"
+            android:fontFamily="@font/lato"
+            android:text="@string/n_a"
+            android:textSize="@dimen/text_sp14" />
+
+        <TextView
+            android:id="@+id/tvPhonenum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin5x4"
+            android:layout_marginTop="@dimen/margin5x1"
+            android:layout_marginEnd="@dimen/margin5x4"
+            android:clickable="false"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="@dimen/margin5x3"
+            android:fontFamily="@font/lato"
+            android:text="@string/n_a"
+            android:textSize="@dimen/text_sp14" />
+
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin5x4"
+            android:layout_marginTop="@dimen/margin5x1"
+            android:layout_marginEnd="@dimen/margin5x4"
+            android:clickable="false"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="@dimen/margin5x3"
+            android:fontFamily="@font/lato"
+            android:text="@string/n_a"
+            android:textSize="@dimen/text_sp14" />
+        <!--<TextView
+            android:id="@+id/tvEditEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10"
+            android:background="@color/green"
+            android:text="@string/edit_event"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:fontFamily="@font/lato_bold"
+            android:textSize="@dimen/text_sp16"
+            android:gravity="center"
+            android:layout_gravity="bottom"
+            android:visibility="visible"/>-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/app_gradiant_background"
+            android:clickable="false"
+            android:focusable="false"
+            android:id="@+id/tvEditEvent"
+            android:layout_marginTop="@dimen/margin5x2"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/lato"
+            android:gravity="center"
+            android:layout_marginBottom="0dp"
+            android:padding="@dimen/margin5x3"
+            android:text="@string/edit_event"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_sp18" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/app_gradiant_background"
+            android:clickable="false"
+            android:focusable="false"
+            android:id="@+id/tvIntrested"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/lato"
+            android:layout_marginTop="@dimen/margin5x2"
+            android:gravity="center"
+            android:layout_marginBottom="0dp"
+            android:padding="@dimen/margin5x3"
+            android:text="@string/joining_instructions"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            android:textSize="@dimen/text_sp18" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/et_height_30"
+        android:contentDescription="@string/navigation"
+        android:src="@drawable/ic_location_track"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin5x2"
+        android:contentDescription="@string/share"
+        android:src="@drawable/ic_share_"
+        app:layout_constraintEnd_toStartOf="@id/navigation"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/addToCalender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin5x2"
+        android:contentDescription="@string/share"
+        android:src="@drawable/ic_calendar_"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="@id/share"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

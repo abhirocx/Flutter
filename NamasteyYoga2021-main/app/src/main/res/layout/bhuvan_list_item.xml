@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardUseCompatPadding="false"
+        android:id="@+id/bodyLayout"
+        app:cardPreventCornerOverlap="false"
+        android:layout_margin="@dimen/padding4x4"
+        android:layout_marginBottom="@dimen/padding4x4"
+        app:cardCornerRadius="@dimen/margin5x2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                      android:padding="10dp"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:weightSum="3"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/et_height_10"
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="@string/ctr_name"/>
+                <TextView
+                    android:id="@+id/tvCountryName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="@string/n_a"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/et_height_10"
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="@string/location"/>
+                <TextView
+                    android:id="@+id/tvLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:text="@string/n_a"/>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/et_height_10"
+                    android:gravity="center"
+                    android:textSize="14dp"
+                    android:textColor="@color/black"
+                    android:text="@string/partcpnts"/>
+                <TextView
+                    android:id="@+id/tvParticipants"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:text="@string/n_a"/>
+            </LinearLayout>
+
+        </LinearLayout>
+            <LinearLayout
+                android:id="@+id/eventType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin5x4"
+                android:layout_marginEnd="@dimen/margin5x4"
+                android:orientation="vertical"
+                android:clickable="false"
+                android:focusable="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_color_border_drawable"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:fontFamily="@font/lato"
+                    android:paddingStart="@dimen/margin5x2"
+                    android:paddingTop="@dimen/dimen3x1"
+                    android:paddingEnd="@dimen/margin5x2"
+                    android:visibility="gone"
+                    android:paddingBottom="@dimen/dimen3x1"
+                    android:text="@string/viewall_locations"
+                    android:id="@+id/accountType"
+                    android:textColor="@color/text_goal_black_"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/background" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

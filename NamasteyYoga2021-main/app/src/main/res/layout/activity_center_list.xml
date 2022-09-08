@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:forceDarkAllowed="false"
+    android:background="@color/white"
+    tools:context=".ui.center.centerList.CenterListActivity">
+
+    <include layout="@layout/toolbar_black_with_back_and_img" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/filterLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/light_gray_"
+        android:padding="@dimen/margin5x1"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin5x2"
+            android:layout_marginEnd="@dimen/margin5x2"
+            android:fontFamily="@font/lato_bold"
+            android:singleLine="true"
+            android:text="@string/name_count"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/filter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin5x2"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:contentDescription="@string/goal_setting"
+            android:focusable="true"
+            android:padding="@dimen/margin5x2"
+            android:src="@drawable/ic_filter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_record_found"
+        android:id="@+id/noRecordFound"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <include
+        layout="@layout/button_colored_layout_without_round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero"
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="?attr/actionBarSize"
+        app:layout_constraintBottom_toTopOf="@id/buttonColorLayout"
+        app:layout_constraintTop_toBottomOf="@id/filterLayout"
+        tools:listitem="@layout/center_item_layout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

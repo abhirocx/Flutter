@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeRefreshLayout"
+    android:forceDarkAllowed="false"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_activity_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.health.main.HeathTrackerActivity">
+
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".4" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one"
+            android:layout_marginTop="?attr/actionBarSize"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".1" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/one"
+            app:layout_constraintBottom_toBottomOf="@id/background"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias=".8" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier4"
+            android:layout_width="@dimen/one"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=".3"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrier5"
+            android:layout_width="@dimen/one"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias=".7"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:background="@drawable/app_gradiant_background_2"
+            android:contentDescription="@string/background"
+            app:layout_constraintBottom_toTopOf="@id/barrier1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="@dimen/zero"
+            android:layout_height="@dimen/zero"
+            app:layout_constraintBottom_toBottomOf="@id/barrier3"
+            app:layout_constraintEnd_toStartOf="@id/barrier5"
+            app:layout_constraintStart_toEndOf="@id/barrier4"
+            app:layout_constraintTop_toBottomOf="@id/barrier2">
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:id="@+id/circularProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:foregroundGravity="center"
+                app:cpb_background_progressbar_color="@color/white"
+                app:cpb_background_progressbar_width="2dp"
+                app:cpb_progress="75"
+                app:cpb_progress_direction="to_right"
+                app:cpb_progressbar_color="@color/white"
+                app:cpb_progressbar_width="@dimen/dimen3x2"
+                app:cpb_round_border="false"
+                app:flow_horizontalAlign="center"
+                app:flow_verticalAlign="center"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+                >
+
+                <TextView
+                    android:id="@+id/stepCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:paddingStart="@dimen/padding4x2"
+                    android:paddingEnd="@dimen/padding4x2"
+                    android:text="@string/_0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_sp18"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="@dimen/zero"
+                    android:layout_height="@dimen/one"
+                    android:layout_marginTop="@dimen/dimen3x1"
+                    android:background="@color/white"
+                    app:layout_constraintEnd_toEndOf="@id/stepCount"
+                    app:layout_constraintStart_toStartOf="@id/stepCount"
+                    app:layout_constraintTop_toBottomOf="@id/stepCount" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin5x1"
+                    android:fontFamily="@font/lato"
+                    android:text="@string/steps"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/line1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <include layout="@layout/toolbar_with_back_and_img_2" />
+
+        <LinearLayout
+            android:id="@+id/eventType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin5x4"
+            android:layout_marginEnd="@dimen/margin5x4"
+            android:background="?android:selectableItemBackground"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/app_color_border_drawable"
+                android:clickable="false"
+                android:enabled="false"
+                android:focusable="false"
+                android:fontFamily="@font/lato"
+                android:paddingStart="@dimen/margin5x3"
+                android:paddingTop="@dimen/dimen3x2"
+                android:paddingEnd="@dimen/margin5x3"
+                android:paddingBottom="@dimen/dimen3x2"
+                android:text="@string/history"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text_sp18"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/background" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="@dimen/zero"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin5x4"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/last_7_days_activities"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_sp18"
+            app:layout_constraintBottom_toBottomOf="@id/eventType"
+            app:layout_constraintEnd_toStartOf="@id/eventType"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/eventType" />
+
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/zero"
+            android:paddingStart="@dimen/margin5x2"
+            android:paddingEnd="@dimen/margin5x2"
+            android:layout_marginTop="@dimen/margin5x3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/eventType">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.np.namasteyoga.ui.health.GraphChart
+                    android:id="@+id/chart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/zero"
+                    android:paddingStart="@dimen/margin5x2"
+                    app:bar_show_animation="true"
+                    app:bar_width="45dp"
+                    app:barrierMargin="@dimen/margin5x1"
+                    app:layout_constraintBottom_toTopOf="@id/line4"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <com.np.namasteyoga.ui.health.GraphChart2
+                    android:id="@+id/chart3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/et_height_50"
+                    app:bar_show_animation="true"
+                    app:bar_width="45dp"
+                    app:barrierMargin="@dimen/margin5x1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <View
+                    android:id="@+id/line4"
+                    android:layout_width="@dimen/et_width_400"
+                    android:layout_height="@dimen/one"
+                    android:background="@color/colorPrimaryDark"
+
+                    app:layout_constraintBottom_toTopOf="@id/chart3"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </HorizontalScrollView>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/et_height_30"
+            android:layout_marginBottom="@dimen/et_height_30"
+            app:layout_constraintBottom_toBottomOf="@id/background"
+            app:layout_constraintStart_toStartOf="@id/background">
+
+            <ImageView
+                android:id="@+id/imgCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin5x2"
+                android:contentDescription="@string/calories"
+                android:src="@drawable/ic_calory"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/lineCal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/lineCal"
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/one"
+                android:layout_marginTop="@dimen/dimen3x1"
+                android:layout_marginBottom="@dimen/padding4x2"
+                android:background="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/txtCalories"
+                app:layout_constraintEnd_toEndOf="@id/txtCalories"
+                app:layout_constraintStart_toStartOf="@id/txtCalories" />
+
+            <TextView
+                android:id="@+id/txtCalories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:paddingStart="@dimen/padding4x2"
+                android:paddingEnd="@dimen/padding4x2"
+                android:text="@string/_0_cal"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_sp18"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/et_height_30"
+            android:layout_marginBottom="@dimen/et_height_30"
+            app:layout_constraintBottom_toBottomOf="@id/background"
+            app:layout_constraintEnd_toEndOf="@id/background">
+
+            <ImageView
+                android:id="@+id/imgDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin5x2"
+                android:contentDescription="@string/calories"
+                android:src="@drawable/ic_kilometer"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/lineDis"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/lineDis"
+                android:layout_width="@dimen/zero"
+                android:layout_height="@dimen/one"
+                android:layout_marginTop="@dimen/dimen3x1"
+                android:layout_marginBottom="@dimen/padding4x2"
+                android:background="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/txtDistance"
+                app:layout_constraintEnd_toEndOf="@id/txtDistance"
+                app:layout_constraintStart_toStartOf="@id/txtDistance" />
+
+            <TextView
+                android:id="@+id/txtDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:paddingStart="@dimen/padding4x2"
+                android:paddingEnd="@dimen/padding4x2"
+                android:text="@string/_0_km"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_sp18"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--    <View-->
+        <!--        android:id="@+id/lineGraph"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="@dimen/one"-->
+        <!--        android:background="@color/colorPrimaryDark"-->
+        <!--        app:layout_constraintBottom_toTopOf="@id/textBars" />-->
+
+        <!--    <HorizontalScrollView-->
+        <!--        android:id="@+id/textBars"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="@dimen/et_height_40"-->
+        <!--        android:layout_marginBottom="@dimen/margin5x4"-->
+        <!--        android:paddingStart="@dimen/margin5x2"-->
+        <!--        android:paddingEnd="@dimen/margin5x2"-->
+        <!--        app:layout_constraintBottom_toBottomOf="parent">-->
+
+        <!--        <com.np.namasteyoga.ui.health.GraphChart2-->
+        <!--            android:id="@+id/chart2"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            app:bar_show_animation="true"-->
+        <!--            app:bar_spaces="40dp"-->
+        <!--            app:bar_width="30dp" />-->
+        <!--    </HorizontalScrollView>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

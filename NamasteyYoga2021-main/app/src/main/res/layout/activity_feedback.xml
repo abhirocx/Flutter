@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:forceDarkAllowed="false"
+    android:orientation="vertical"
+    tools:context="com.np.namasteyoga.ui.feedback.FeedbackActivity">
+
+    <include layout="@layout/toolbar_black_with_back" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/one"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:background="@color/light_gray_"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <include
+        layout="@layout/button_colored_layout_without_round"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <!--    <androidx.recyclerview.widget.RecyclerView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/zero"-->
+    <!--        android:id="@+id/recyclerView"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/buttonColorLayout"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/divider"-->
+    <!--        tools:listitem="@layout/feedback_item_layout" />-->
+
+    <!--    <ListView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="@dimen/zero"-->
+    <!--        android:id="@+id/recyclerView"-->
+    <!--        app:layout_constraintBottom_toTopOf="@id/buttonColorLayout"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/divider"-->
+    <!--        tools:listitem="@layout/feedback_item_layout" />-->
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/zero"
+        app:layout_constraintBottom_toTopOf="@id/buttonColorLayout"
+        app:layout_constraintTop_toBottomOf="@id/divider">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/starDetails"
+                android:visibility="gone">
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin5x4"
+                android:layout_marginTop="@dimen/margin5x2"
+                android:layout_marginEnd="@dimen/margin5x4"
+                android:fontFamily="@font/lato_black"
+                android:text="@string/start_rating"
+                android:clickable="false"
+                android:textColor="@color/text_black_"
+                android:textSize="@dimen/text_sp16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/divider" />
+
+            <RatingBar
+                android:id="@+id/ratingView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/margin5x3"
+                android:layout_marginTop="@dimen/margin5x4"
+                android:layout_marginEnd="@dimen/margin5x3"
+                android:outlineAmbientShadowColor="@color/orange"
+                android:outlineSpotShadowColor="@color/orange"
+                android:secondaryProgressTint="@color/orange"
+                android:numStars="5"
+                android:progressTint="@color/orange"
+                android:stepSize="1"
+                app:layout_constraintEnd_toEndOf="@id/title"
+                app:layout_constraintStart_toStartOf="@id/title"
+                app:layout_constraintTop_toBottomOf="@id/title" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one"
+                android:layout_marginTop="@dimen/margin5x2"
+                android:background="@color/light_gray_"
+                app:layout_constraintEnd_toEndOf="@id/title"
+                app:layout_constraintStart_toStartOf="@id/title"
+                app:layout_constraintTop_toBottomOf="@id/description" />
+
+            <TextView
+                android:id="@+id/titleDes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin5x4"
+                android:layout_marginTop="@dimen/margin5x5"
+                android:clickable="false"
+                android:layout_marginEnd="@dimen/margin5x4"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/tell_us_about_a_bit_more_about_why_your_experience"
+                android:textColor="@color/text_black_"
+                android:textSize="@dimen/text_sp16"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@id/title"
+                app:layout_constraintStart_toStartOf="@id/title"
+                app:layout_constraintTop_toBottomOf="@id/ratingView" />
+
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hundraded"
+                android:layout_marginStart="@dimen/margin5x4"
+                android:layout_marginTop="@dimen/margin5x1"
+                android:layout_marginEnd="@dimen/margin5x4"
+                android:background="@color/white"
+                android:gravity="top"
+                android:hint="@string/brief_description"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:maxLength="200"
+                android:textSize="@dimen/text_sp16"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="@id/title"
+                app:layout_constraintStart_toStartOf="@id/title"
+                app:layout_constraintTop_toBottomOf="@id/titleDes" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/one"
+                android:layout_marginTop="@dimen/margin5x1"
+                android:background="@color/light_gray_"
+                app:layout_constraintEnd_toEndOf="@id/title"
+                app:layout_constraintStart_toStartOf="@id/title"
+                app:layout_constraintTop_toBottomOf="@id/description" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

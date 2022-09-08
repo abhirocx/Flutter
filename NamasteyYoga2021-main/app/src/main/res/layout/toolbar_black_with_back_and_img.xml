@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_constraintTop_toTopOf="parent"
+    android:layout_width="match_parent"
+    android:paddingStart="@dimen/margin5x1"
+    android:paddingEnd="@dimen/margin5x1"
+    android:background="@android:color/white"
+    android:layout_height="?attr/actionBarSize">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/onBackPressed"
+        android:id="@+id/onBackPressedClick"
+        android:padding="@dimen/margin5x2"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:selectableItemBackground"
+        android:src="@drawable/ic_back_black"
+
+        />
+
+    <TextView
+        android:layout_width="@dimen/zero"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lato_bold"
+        android:singleLine="true"
+        android:id="@+id/toolbarTitle"
+        android:text="@string/app_name"
+        android:paddingStart="@dimen/padding3x4"
+        android:paddingEnd="@dimen/padding3x4"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/settings"
+        app:layout_constraintStart_toEndOf="@id/onBackPressedClick"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="@dimen/text_sp20"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/goal_setting"
+        android:id="@+id/settings"
+        android:padding="@dimen/margin5x2"
+        android:layout_marginEnd="@dimen/margin5x2"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?android:selectableItemBackground"
+        android:src="@drawable/ic_search"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:forceDarkAllowed="false"
+    android:background="@color/white"
+    tools:context="com.np.namasteyoga.ui.ayushMerchandise.detailScreen.AyushProductDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar_green_with_cross" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/fragment_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/et_width_220" />
+
+                <me.relex.circleindicator.CircleIndicator3
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin5x5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:layout_marginBottom="@dimen/et_height_30"
+                    app:ci_drawable="@drawable/ic_selected"
+                    app:ci_drawable_unselected="@drawable/ic_deselect"
+                    app:ci_margin="@dimen/margin5x2"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:id="@+id/circleIndicator" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin5x4"
+                    android:layout_marginEnd="@dimen/margin5x4"
+                    android:layout_marginTop="@dimen/margin5x2"
+                    android:fontFamily="@font/roboto_medium_numbers"
+                    android:text="@string/description"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_sp16" />
+
+                <com.skyhope.showmoretextview.ShowMoreTextView
+                    android:id="@+id/tvOverview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin5x4"
+                    android:layout_marginEnd="@dimen/margin5x4"
+                    android:layout_marginTop="@dimen/margin5x2"
+                    android:layout_marginBottom="@dimen/margin5x1"
+                    android:fontFamily="@font/lato"
+                    android:text="@string/n_a"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_sp14" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin5x4"
+                    android:layout_marginEnd="@dimen/margin5x4"
+                    android:layout_marginTop="@dimen/margin5x4"
+                    android:fontFamily="@font/roboto_medium_numbers"
+                    android:text="@string/key_ingredients"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_sp16" />
+
+                <TextView
+                    android:id="@+id/tvKeyIngredients"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin5x4"
+                    android:layout_marginRight="@dimen/margin5x4"
+                    android:layout_marginTop="@dimen/margin5x2"
+                    android:layout_marginBottom="@dimen/margin5x1"
+                    android:fontFamily="@font/lato"
+                    android:text="@string/n_a"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_sp14"
+                    android:typeface="normal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin5x4"
+                    android:layout_marginEnd="@dimen/margin5x4"
+                    android:layout_marginTop="@dimen/margin5x4"
+                    android:fontFamily="@font/roboto_medium_numbers"
+                    android:text="@string/direction"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_sp16" />
+
+                <TextView
+                    android:id="@+id/tvDirection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin5x4"
+                    android:layout_marginRight="@dimen/margin5x4"
+                    android:layout_marginTop="@dimen/margin5x2"
+                    android:layout_marginBottom="@dimen/margin5x3"
+                    android:fontFamily="@font/lato"
+                    android:text="@string/n_a"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_sp14"
+                    android:typeface="normal" />
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
+</LinearLayout>
